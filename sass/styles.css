@@ -1,0 +1,904 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  overflow: hidden;
+  background-color: black;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+}
+
+.room {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ashtray-animation {
+  position: absolute;
+  z-index: 8;
+  top: 54%;
+  left: 23%;
+  width: 5%;
+  height: 6%;
+}
+
+.chair {
+  top: 48%;
+  left: 9%;
+  width: 25%;
+  height: 52%;
+  position: absolute;
+  z-index: 7;
+}
+
+.plant {
+  top: 12%;
+  left: 24%;
+  width: 17%;
+  height: 27%;
+  position: absolute;
+  z-index: 5;
+}
+
+.carpet {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.backdrop {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.baseboard {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+.bulletin-board {
+  top: 7%;
+  left: 34%;
+  width: 43%;
+  height: 36%;
+  position: absolute;
+  z-index: 3;
+}
+
+.stereo {
+  top: 7%;
+  left: 84%;
+  width: 15%;
+  height: 19%;
+  position: absolute;
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+.stereo:hover, .stereo:hover + .stereo-glow, .stereo:focus {
+  transform: scale(1.05);
+  cursor: pointer;
+  visibility: visible;
+}
+
+.stereo-glow {
+  top: -0.1%;
+  left: 87.3%;
+  width: 12%;
+  height: 19%;
+  position: absolute;
+  transition: all 0s ease-in-out;
+  pointer-events: none;
+  visibility: hidden;
+  z-index: 10;
+}
+
+.mixer-glow {
+  top: 81.9%;
+  left: 29.3%;
+  width: 35.2%;
+  height: 19%;
+  z-index: 10;
+  position: absolute;
+  transition: all 0s ease-in-out;
+  pointer-events: none;
+}
+
+.mixer-wire {
+  top: 59%;
+  left: 27%;
+  width: 15%;
+  height: 25%;
+  position: absolute;
+  z-index: 3;
+}
+
+.mixer-neon {
+  top: 81.9%;
+  left: 29.3%;
+  width: 100%;
+  height: 19%;
+  z-index: 8;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.dj {
+  top: 83%;
+  left: 32%;
+  width: 27%;
+  height: 16%;
+  position: absolute;
+  z-index: 9;
+  transition: all 0.3s ease-in-out;
+}
+.dj:hover + .mixer-neon, .dj:hover, .dj:focus {
+  transform: scale(1.1);
+  visibility: visible;
+  cursor: pointer;
+}
+
+.github {
+  position: absolute;
+  z-index: 5;
+  width: 5%;
+  top: 33%;
+  right: 33%;
+  transition: all ease-in-out 0.2s;
+}
+.github:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+.about-me {
+  top: 12%;
+  right: 49.5%;
+  width: 13%;
+  height: 16%;
+  position: absolute;
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+.about-me:hover, .about-me:focus {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.about-me-anchor:hover + .about-neon {
+  visibility: visible;
+}
+
+.about-neon {
+  top: 3.5%;
+  right: 44.5%;
+  width: 24.5%;
+  height: 34%;
+  position: absolute;
+  z-index: 4;
+  pointer-events: none;
+  transition: all 0s ease-in-out;
+  visibility: hidden;
+}
+
+.info {
+  top: 22%;
+  left: 66%;
+  width: 4%;
+  height: 6%;
+  position: absolute;
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+.info:hover, .info:hover + .info-neon, .info:focus {
+  transform: scale(1.2);
+  cursor: pointer;
+  visibility: visible;
+}
+
+.info-neon {
+  top: 18.1%;
+  left: 62.7%;
+  width: 10.1%;
+  height: 14.2%;
+  position: absolute;
+  z-index: 4;
+  pointer-events: none;
+  transition: all 0.1s ease-in-out;
+  opacity: 0.8;
+  visibility: hidden;
+}
+
+.contact {
+  top: 12%;
+  left: 65%;
+  width: 8%;
+  height: 11%;
+  position: absolute;
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+.contact:hover, .contact:focus {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.contact-anchor:hover + .contact-neon {
+  visibility: visible;
+}
+
+.contact-neon {
+  top: 6.9%;
+  left: 62%;
+  width: 14.7%;
+  height: 20%;
+  position: absolute;
+  z-index: 4;
+  pointer-events: none;
+  transition: all 0.1s ease-in-out;
+  visibility: hidden;
+}
+
+.lamp {
+  top: 18.5%;
+  left: 18.5%;
+  width: 10%;
+  height: 66%;
+  position: absolute;
+  z-index: 3;
+}
+
+.switch {
+  top: 24%;
+  left: 79%;
+  width: 3.3%;
+  height: 7%;
+  position: absolute;
+  z-index: 4;
+  transition: all 0.3s ease-in-out;
+}
+.switch:hover, .switch:hover + .lamp-neon, .switch:focus {
+  transform: scale(1.2);
+  cursor: pointer;
+  visibility: visible;
+}
+
+.lamp-neon {
+  top: 16.6%;
+  left: 72.7%;
+  width: 16%;
+  height: 23%;
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  transition: all 0.1s ease-in-out;
+  visibility: hidden;
+}
+
+.power {
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
+  z-index: 3;
+}
+
+.power-glow {
+  top: 70.3%;
+  left: 43.3%;
+  width: 13%;
+  height: 17.8%;
+  z-index: 4;
+  position: absolute;
+  transition: all 0s ease-in-out;
+  pointer-events: none;
+}
+
+.poster {
+  top: 6%;
+  left: 12%;
+  width: 17%;
+  height: 33%;
+  position: absolute;
+  z-index: 2;
+}
+
+.desk {
+  top: 48%;
+  left: 19%;
+  width: 66%;
+  height: 40%;
+  position: absolute;
+  z-index: 4;
+}
+
+.door {
+  top: 7%;
+  left: 0%;
+  width: 12%;
+  height: 90%;
+  position: absolute;
+  z-index: 3;
+}
+
+.dresser {
+  top: 25%;
+  left: 84%;
+  width: 22%;
+  height: 60%;
+  position: absolute;
+  z-index: 3;
+}
+
+.tech-stack {
+  top: 67%;
+  left: 62%;
+  width: 17%;
+  height: 17%;
+  position: absolute;
+  z-index: 6;
+  transition: all 0.3s ease-in-out;
+}
+.tech-stack:hover, .tech-stack:hover + .tech-stack-neon, .tech-stack:focus {
+  transform: scale(1.1);
+  cursor: pointer;
+  visibility: visible;
+}
+
+.tech-stack-neon {
+  top: 59%;
+  left: 57.5%;
+  width: 24%;
+  height: 33.3%;
+  position: absolute;
+  z-index: 5;
+  pointer-events: none;
+  transition: all 0.1s ease-in-out;
+  visibility: hidden;
+}
+
+.beat-store-anchor:hover + .music-glow {
+  display: inline;
+}
+
+.keyboard {
+  top: 44%;
+  left: 47%;
+  width: 24%;
+  height: 8%;
+  position: absolute;
+  z-index: 6;
+  transition: all 0.3s ease-in-out;
+}
+.keyboard:hover, .keyboard:focus {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.music-glow {
+  display: none;
+  z-index: 7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.keyboard-glow {
+  top: 41%;
+  left: 52%;
+  width: 24%;
+  height: 8%;
+  position: absolute;
+  z-index: 6;
+  pointer-events: none;
+  transition: all 0s ease-in-out;
+}
+
+.right-speaker {
+  top: 37%;
+  left: 71%;
+  width: 8.5%;
+  height: 16%;
+  position: absolute;
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+
+.speaker-glow {
+  top: 36.05%;
+  left: 71.75%;
+  width: 3.2%;
+  height: 20%;
+  position: absolute;
+  z-index: 6;
+  pointer-events: none;
+}
+
+.left-speaker {
+  top: 37%;
+  left: 28%;
+  width: 8.5%;
+  height: 16%;
+  position: absolute;
+  z-index: 5;
+}
+
+.left-speaker-glow {
+  top: 36.2%;
+  left: 27.5%;
+  width: 3.2%;
+  height: 20%;
+  position: absolute;
+  z-index: 7;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.keyboard-neon {
+  top: 38.9%;
+  left: 29.4%;
+  width: 3.2%;
+  height: 16%;
+  position: absolute;
+  z-index: 7;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.phone {
+  top: 30%;
+  left: 69.5%;
+  width: 10%;
+  height: 12.5%;
+  position: absolute;
+  z-index: 8;
+  transition: all 0.3s ease-in-out;
+}
+.phone:hover, .phone:focus {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.phone-neon {
+  top: 24.5%;
+  left: 65.6%;
+  width: 16.5%;
+  height: 21%;
+  position: absolute;
+  z-index: 7;
+  pointer-events: none;
+  transition: all 0.1s ease-in-out;
+  visibility: hidden;
+}
+
+.phone-anchor:hover + .phone-neon {
+  visibility: visible;
+}
+
+.computer-monitor {
+  top: 30%;
+  left: 34%;
+  width: 16.8%;
+  height: 24%;
+  position: absolute;
+  z-index: 7;
+  transition: all 0.3s ease-in-out;
+}
+.computer-monitor:hover, .computer-monitor:hover + .comp-glow, .computer-monitor:focus {
+  transform: scale(1.1);
+  cursor: pointer;
+  display: inline;
+}
+
+.comp-glow {
+  display: none;
+}
+
+.computer-glow {
+  top: 18.2%;
+  left: 20.2%;
+  width: 31%;
+  height: 40%;
+  position: absolute;
+  z-index: 8;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.computer-tower {
+  top: 56%;
+  left: 53%;
+  width: 8%;
+  height: 25%;
+  position: absolute;
+  z-index: 6;
+}
+
+.tower-glow {
+  top: 60%;
+  left: 53.5%;
+  width: 2.5%;
+  height: 3%;
+  position: absolute;
+  z-index: 8;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.mouse-glow {
+  top: 55.5%;
+  left: 45.5%;
+  width: 2.5%;
+  height: 3%;
+  position: absolute;
+  z-index: 8;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.computer-keyboard {
+  top: 55%;
+  left: 27%;
+  width: 24%;
+  height: 6%;
+  position: absolute;
+  z-index: 6;
+  transition: all 0.3s ease-in-out;
+}
+
+.shade {
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 94%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.light {
+  top: 0;
+  left: -1%;
+  width: 100%;
+  height: 107%;
+  position: absolute;
+  z-index: 10;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.dark {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  opacity: 0.7;
+  background-color: black;
+  pointer-events: none;
+  display: none;
+}
+
+body {
+  background-color: black;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.about-me-page {
+  height: 105vh;
+  width: 73vw;
+  z-index: 1;
+}
+
+.background {
+  position: absolute;
+  width: 200%;
+  height: 150%;
+  z-index: 0;
+  top: -21%;
+  left: -8%;
+}
+
+.home {
+  z-index: 3;
+  position: absolute;
+  height: auto;
+  top: 6%;
+  left: 88%;
+  font-size: 1rem;
+  width: 43px;
+  padding-bottom: 5px;
+  transition: all ease-in-out 0.3s;
+}
+.home:hover {
+  cursor: pointer;
+  border-bottom: red 3px solid;
+}
+
+.beat-store-container {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  height: 100%;
+}
+
+.beat-store-home {
+  z-index: 3;
+  position: absolute;
+  height: auto;
+  top: 16px;
+  right: 42px;
+  width: 35px;
+  padding-bottom: 5px;
+  transition: all ease-in 0.2s;
+}
+.beat-store-home:hover {
+  cursor: pointer;
+  border-bottom: red 3px solid;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  height: 100%;
+  padding-top: 60px;
+  padding-bottom: 200px;
+}/*# sourceMappingURL=styles.css.map */

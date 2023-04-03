@@ -1,0 +1,32 @@
+.beat-store-container {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 100%;
+}
+
+.beat-store-home {
+    z-index: 3;
+    position: absolute;
+    height: auto;
+    top: 16px;
+    right: 42px;
+    width: 35px;
+    padding-bottom: 5px;
+    transition: all ease-in 0.2s;
+    &:hover {
+        cursor: pointer;
+        border-bottom: red 3px solid;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+    height: 100%;
+    padding-top: 60px;
+    padding-bottom: 200px;
+}
+
