@@ -107,15 +107,16 @@
 // ***
 
 // MIXER
-.mixer-glow {
+.dj-glow {
     top: 81.9%;
     left: 29.3%;
     width: 35.2%;
     height: 19%;
-    z-index: 10;
+    z-index: 11;
     position: absolute;
     transition: all 0s ease-in-out;
     pointer-events: none;
+    visibility: hidden;
 }
 
 .mixer-wire {
@@ -147,7 +148,7 @@
     position: absolute;
     z-index: 9;
     transition: all 0.3s ease-in-out;
-    &:hover + .mixer-neon,
+    &:hover + .mixer-glow,
     &:hover,
     &:focus {
         transform: scale(1.1);
@@ -530,16 +531,18 @@ visibility: hidden;
     }
 }
 
-
-// COMPUTER
-// .screen {
-//     top: 33%;
-//     left: 35%;
-//     width: 9%;
-//     height: 14%;
-//     position: absolute;
-//     z-index: 5;
-// }
+.internet {
+    position: absolute;
+    width: 4.5%;
+    z-index: 10;
+    right: 58.5%;
+    filter: invert(100);
+    top: 35%;
+    rotate: 3deg;
+    opacity: 0.8;
+    transition: all ease-in-out 0.3s;
+    pointer-events: none;
+}
 
 .computer-monitor {
     top: 30%;

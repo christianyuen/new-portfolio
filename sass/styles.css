@@ -333,15 +333,16 @@ header {
   z-index: 10;
 }
 
-.mixer-glow {
+.dj-glow {
   top: 81.9%;
   left: 29.3%;
   width: 35.2%;
   height: 19%;
-  z-index: 10;
+  z-index: 11;
   position: absolute;
   transition: all 0s ease-in-out;
   pointer-events: none;
+  visibility: hidden;
 }
 
 .mixer-wire {
@@ -374,7 +375,7 @@ header {
   z-index: 9;
   transition: all 0.3s ease-in-out;
 }
-.dj:hover + .mixer-neon, .dj:hover, .dj:focus {
+.dj:hover + .mixer-glow, .dj:hover, .dj:focus {
   transform: scale(1.1);
   visibility: visible;
   cursor: pointer;
@@ -722,6 +723,19 @@ header {
   visibility: visible;
 }
 
+.internet {
+  position: absolute;
+  width: 4.5%;
+  z-index: 10;
+  right: 58.5%;
+  filter: invert(100);
+  top: 35%;
+  rotate: 3deg;
+  opacity: 0.8;
+  transition: all ease-in-out 0.3s;
+  pointer-events: none;
+}
+
 .computer-monitor {
   top: 30%;
   left: 34%;
@@ -841,8 +855,8 @@ body {
 }
 
 .about-me-page {
-  height: 105vh;
-  width: 73vw;
+  height: 100vh;
+  width: 65vw;
   z-index: 1;
 }
 
@@ -875,7 +889,6 @@ body {
   display: flex;
   justify-content: center;
   background-color: white;
-  height: 100%;
 }
 
 .beat-store-home {
@@ -898,7 +911,10 @@ body {
   justify-content: center;
   position: relative;
   width: 80%;
-  height: 100%;
   padding-top: 60px;
   padding-bottom: 200px;
+}
+
+.beat-store {
+  height: 85vh;
 }/*# sourceMappingURL=styles.css.map */

@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     background-color: white;
-    height: 100%;
 }
 
 .beat-store-home {
@@ -25,8 +24,11 @@
     justify-content: center;
     position: relative;
     width: 80%;
-    height: 100%;
     padding-top: 60px;
     padding-bottom: 200px;
+}
+
+.beat-store {
+    height: 85vh;
 }
 
