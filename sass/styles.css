@@ -333,6 +333,25 @@ header {
   z-index: 10;
 }
 
+.dj {
+  top: 83%;
+  left: 32%;
+  width: 27%;
+  height: 16%;
+  position: absolute;
+  z-index: 9;
+  transition: all 0.3s ease-in-out;
+}
+.dj:hover, .dj:hover + .mixer-hover, .dj:focus {
+  display: flex;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.mixer-hover {
+  display: none;
+}
+
 .dj-glow {
   top: 81.9%;
   left: 29.3%;
@@ -342,7 +361,6 @@ header {
   position: absolute;
   transition: all 0s ease-in-out;
   pointer-events: none;
-  visibility: hidden;
 }
 
 .mixer-wire {
@@ -363,22 +381,6 @@ header {
   position: absolute;
   transition: all 0.3s ease-in-out;
   pointer-events: none;
-  visibility: hidden;
-}
-
-.dj {
-  top: 83%;
-  left: 32%;
-  width: 27%;
-  height: 16%;
-  position: absolute;
-  z-index: 9;
-  transition: all 0.3s ease-in-out;
-}
-.dj:hover + .mixer-glow, .dj:hover, .dj:focus {
-  transform: scale(1.1);
-  visibility: visible;
-  cursor: pointer;
 }
 
 .github {
@@ -396,9 +398,9 @@ header {
 
 .about-me {
   top: 12%;
-  right: 49.5%;
-  width: 13%;
-  height: 16%;
+  right: 37.5%;
+  width: 15%;
+  height: 17%;
   position: absolute;
   z-index: 5;
   transition: all 0.3s ease-in-out;
@@ -413,10 +415,10 @@ header {
 }
 
 .about-neon {
-  top: 3.5%;
-  right: 44.5%;
-  width: 24.5%;
-  height: 34%;
+  top: 2.1%;
+  right: 31.5%;
+  width: 28.5%;
+  height: 38%;
   position: absolute;
   z-index: 4;
   pointer-events: none;
@@ -433,7 +435,7 @@ header {
   z-index: 5;
   transition: all 0.3s ease-in-out;
 }
-.info:hover, .info:hover + .info-neon, .info:focus {
+.info:hover, .info:hover + .info-neon, .info:hover + .info-hover, .info:focus {
   transform: scale(1.2);
   cursor: pointer;
   visibility: visible;
@@ -450,6 +452,23 @@ header {
   transition: all 0.1s ease-in-out;
   opacity: 0.8;
   visibility: hidden;
+}
+
+.info-hover {
+  visibility: hidden;
+  position: absolute;
+  z-index: 4;
+  background-color: black;
+  top: 32%;
+  left: 50.5%;
+  border: 1px white solid;
+  opacity: 0.8;
+}
+.info-hover p {
+  color: white;
+  padding: 10px 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8rem;
 }
 
 .contact {
@@ -507,9 +526,9 @@ header {
 }
 
 .lamp-neon {
-  top: 16.6%;
-  left: 72.7%;
-  width: 16%;
+  top: 16.7%;
+  left: 72.5%;
+  width: 16.5%;
   height: 23%;
   position: absolute;
   z-index: 3;
@@ -575,6 +594,10 @@ header {
   z-index: 3;
 }
 
+.skills-anchor:hover + .tech-stack-neon {
+  visibility: visible;
+}
+
 .tech-stack {
   top: 67%;
   left: 62%;
@@ -584,10 +607,9 @@ header {
   z-index: 6;
   transition: all 0.3s ease-in-out;
 }
-.tech-stack:hover, .tech-stack:hover + .tech-stack-neon, .tech-stack:focus {
+.tech-stack:hover, .tech-stack:focus {
   transform: scale(1.1);
   cursor: pointer;
-  visibility: visible;
 }
 
 .tech-stack-neon {
@@ -723,17 +745,28 @@ header {
   visibility: visible;
 }
 
-.internet {
+.black-screen {
   position: absolute;
-  width: 4.5%;
-  z-index: 10;
-  right: 58.5%;
-  filter: invert(100);
-  top: 35%;
-  rotate: 3deg;
-  opacity: 0.8;
+  width: 9.8%;
+  z-index: 7;
+  right: 56%;
+  top: 31.5%;
   transition: all ease-in-out 0.3s;
   pointer-events: none;
+  height: 16%;
+}
+
+.internet {
+  position: absolute;
+  width: 8.8%;
+  z-index: 8;
+  right: 56.5%;
+  top: 32.5%;
+  rotate: 2deg;
+  opacity: 0.9;
+  transition: all ease-in-out 0.3s;
+  pointer-events: none;
+  height: 12%;
 }
 
 .computer-monitor {
@@ -743,16 +776,24 @@ header {
   height: 24%;
   position: absolute;
   z-index: 7;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-.computer-monitor:hover, .computer-monitor:hover + .comp-glow, .computer-monitor:focus {
+.computer-monitor:hover, .computer-monitor:focus {
   transform: scale(1.1);
   cursor: pointer;
   display: inline;
 }
 
+.computer-anchor:hover + .comp-glow {
+  transform: scale(1.1);
+  display: inline;
+  opacity: 1;
+}
+
 .comp-glow {
   display: none;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .computer-glow {
@@ -855,8 +896,8 @@ body {
 }
 
 .about-me-page {
-  height: 100vh;
-  width: 65vw;
+  height: 900px;
+  width: 1050px;
   z-index: 1;
 }
 
@@ -874,7 +915,7 @@ body {
   position: absolute;
   height: auto;
   top: 6%;
-  left: 88%;
+  left: 85%;
   font-size: 1rem;
   width: 43px;
   padding-bottom: 5px;
@@ -888,22 +929,23 @@ body {
 .beat-store-container {
   display: flex;
   justify-content: center;
-  background-color: white;
+  background-color: rgb(30, 30, 30);
 }
 
 .beat-store-home {
   z-index: 3;
   position: absolute;
   height: auto;
+  filter: invert(100);
   top: 16px;
   right: 42px;
   width: 35px;
   padding-bottom: 5px;
-  transition: all ease-in 0.2s;
+  transition: all ease-in-out 0.1s;
 }
 .beat-store-home:hover {
   cursor: pointer;
-  border-bottom: red 3px solid;
+  border-bottom: rgb(0, 213, 255) 3px solid;
 }
 
 .container {
@@ -917,4 +959,147 @@ body {
 
 .beat-store {
   height: 85vh;
+}
+
+.skills {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 40px;
+  position: relative;
+}
+
+.skills-paper {
+  height: 90vh;
+  width: 43vw;
+  z-index: 2;
+  position: absolute;
+}
+
+.skills-title {
+  height: 90vh;
+  width: 43vw;
+  z-index: 3;
+  position: absolute;
+}
+
+.skill {
+  height: 90vh;
+  width: 43vw;
+  z-index: 4;
+  position: absolute;
+}
+.skill:hover + .skill-names, .skill:hover, .skill:focus {
+  display: inline-block;
+}
+
+.skill-names {
+  height: 90vh;
+  width: 43vw;
+  z-index: 3;
+  position: absolute;
+  display: none;
+  transition: all ease-in-out 0.3s;
+  pointer-events: none;
+}
+
+.projects-html {
+  overflow: visible;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projects .project {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+}
+.projects .project:last-of-type {
+  margin-bottom: 100px;
+}
+.projects .project:first-of-type {
+  margin-top: 100px;
+}
+
+.project-img {
+  width: 100%;
+}
+
+.project-hover {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.project-hover:hover {
+  opacity: 0.7;
+}
+
+.project-hover-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.enter {
+  color: white;
+  font-size: 8rem;
+  transition: all 0.3s ease-in-out;
+}
+.enter:hover, .enter:focus {
+  color: red;
+}
+.enter:hover + .iconDescription {
+  opacity: 1;
+}
+
+.iconDescription {
+  color: white;
+  opacity: 0;
+  font-size: 0.8rem;
+  font-family: "Courier New", Courier, monospace;
+  margin: -10px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.projects-home {
+  z-index: 3;
+  position: absolute;
+  height: auto;
+  filter: invert(100);
+  top: 30px;
+  right: 152px;
+  width: 49px;
+  padding-bottom: 5px;
+  transition: all ease-in-out 0.1s;
+}
+.projects-home:hover {
+  cursor: pointer;
+  border-bottom: rgb(0, 213, 255) 3px solid;
 }/*# sourceMappingURL=styles.css.map */

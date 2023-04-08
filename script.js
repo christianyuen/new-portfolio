@@ -14,6 +14,18 @@ lights.addEventListener('click', function() {
     }
 });
 
+const info = document.querySelector('.info');
+info.addEventListener('click', function() {
+    console.log('click me')
+    const infoHover = document.querySelector('.info-hover')
+    if (infoHover.style.visibility == 'visible') {
+        infoHover.style.visibility = 'hidden'
+    } else {
+        infoHover.style.visibility = 'visible';
+    }
+})
+
+
 app.init = () => {
 };
 

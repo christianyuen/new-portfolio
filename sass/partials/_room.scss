@@ -107,6 +107,27 @@
 // ***
 
 // MIXER
+.dj {
+    top: 83%;
+    left: 32%;
+    width: 27%;
+    height: 16%;
+    position: absolute;
+    z-index: 9;
+    transition: all 0.3s ease-in-out;
+    &:hover,
+    &:hover + .mixer-hover,
+    &:focus {
+        display: flex;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+
+.mixer-hover {
+    display: none;
+}
+
 .dj-glow {
     top: 81.9%;
     left: 29.3%;
@@ -116,7 +137,6 @@
     position: absolute;
     transition: all 0s ease-in-out;
     pointer-events: none;
-    visibility: hidden;
 }
 
 .mixer-wire {
@@ -137,25 +157,8 @@
     position: absolute;
     transition: all 0.3s ease-in-out;
     pointer-events: none;
-    visibility: hidden;
 }
 
-.dj {
-    top: 83%;
-    left: 32%;
-    width: 27%;
-    height: 16%;
-    position: absolute;
-    z-index: 9;
-    transition: all 0.3s ease-in-out;
-    &:hover + .mixer-glow,
-    &:hover,
-    &:focus {
-        transform: scale(1.1);
-        visibility: visible;
-        cursor: pointer;
-    }
-}
 // ***
 
 // GITHUB
@@ -175,9 +178,9 @@
 // ABOUT
 .about-me {
     top: 12%;
-    right: 49.5%;
-    width: 13%;
-    height: 16%;
+    right: 37.5%;
+    width: 15%;
+    height: 17%;
     position: absolute;
     z-index: 5;
     transition: all 0.3s ease-in-out;
@@ -194,15 +197,15 @@
 }
 
 .about-neon {
-    top: 3.5%;
-right: 44.5%;
-width: 24.5%;
-height: 34%;
-position: absolute;
-z-index: 4;
-pointer-events: none;
-transition: all 0s ease-in-out;
-visibility: hidden;
+    top: 2.1%;
+    right: 31.5%;
+    width: 28.5%;
+    height: 38%;
+    position: absolute;
+    z-index: 4;
+    pointer-events: none;
+    transition: all 0s ease-in-out;
+    visibility: hidden;
 }
 // ***
 
@@ -217,6 +220,7 @@ visibility: hidden;
     transition: all 0.3s ease-in-out;
     &:hover,
     &:hover + .info-neon,
+    &:hover + .info-hover,
     &:focus {
         transform: scale(1.2);
         cursor: pointer;
@@ -235,6 +239,23 @@ visibility: hidden;
     transition: all 0.1s ease-in-out;
     opacity: 0.8;
     visibility: hidden;
+}
+
+.info-hover {
+    visibility: hidden;
+    position: absolute;
+    z-index: 4;
+    background-color: black;
+    top: 32%;
+    left: 50.5%;
+    border: 1px white solid;
+    opacity: 0.8;
+    p {
+        color: white;
+        padding: 10px 20px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 0.8rem;
+    }
 }
 // ***
 
@@ -300,9 +321,9 @@ visibility: hidden;
 }
 
 .lamp-neon {
-    top: 16.6%;
-    left: 72.7%;
-    width: 16%;
+    top: 16.7%;
+    left: 72.5%;
+    width: 16.5%;
     height: 23%;
     position: absolute;
     z-index: 3;
@@ -310,6 +331,7 @@ visibility: hidden;
     transition: all 0.1s ease-in-out;
     visibility: hidden;
 }
+
 
 // POWER
 .power {
@@ -372,6 +394,12 @@ visibility: hidden;
 
 
 // TECH STACK
+.skills-anchor {
+    &:hover + .tech-stack-neon {
+        visibility: visible;
+    }
+}
+
 .tech-stack {
     top: 67%;
     left: 62%;
@@ -381,11 +409,9 @@ visibility: hidden;
     z-index: 6;
     transition: all 0.3s ease-in-out;
     &:hover,
-    &:hover + .tech-stack-neon,
     &:focus {
         transform: scale(1.1);
         cursor: pointer;
-        visibility: visible;
     }
 }
 
@@ -531,17 +557,31 @@ visibility: hidden;
     }
 }
 
-.internet {
+
+// COMPUTER 
+
+.black-screen {
     position: absolute;
-    width: 4.5%;
-    z-index: 10;
-    right: 58.5%;
-    filter: invert(100);
-    top: 35%;
-    rotate: 3deg;
-    opacity: 0.8;
+    width: 9.8%;
+    z-index: 7;
+    right: 56%;
+    top: 31.5%;
     transition: all ease-in-out 0.3s;
     pointer-events: none;
+    height: 16%;
+}
+
+.internet {
+    position: absolute;
+    width: 8.8%;
+    z-index: 8;
+    right: 56.5%;
+    top: 32.5%;
+    rotate: 2deg;
+    opacity: 0.9;
+    transition: all ease-in-out 0.3s;
+    pointer-events: none;
+    height: 12%;
 }
 
 .computer-monitor {
@@ -551,9 +591,8 @@ visibility: hidden;
     height: 24%;
     position: absolute;
     z-index: 7;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
     &:hover,
-    &:hover + .comp-glow,
     &:focus {
         transform: scale(1.1);
         cursor: pointer;
@@ -561,8 +600,19 @@ visibility: hidden;
     }
 }
 
+.computer-anchor {
+    &:hover + .comp-glow
+    {
+        transform: scale(1.1);
+        display: inline;
+        opacity: 1;
+    }
+}
+
 .comp-glow {
     display: none;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
 }
 
 .computer-glow {
@@ -606,7 +656,6 @@ visibility: hidden;
     pointer-events: none;
     transition: all 0.3s ease-in-out;
 }
-
 
 .computer-keyboard {
     top: 55%;

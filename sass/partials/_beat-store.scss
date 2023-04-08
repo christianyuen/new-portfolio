@@ -1,21 +1,22 @@
 .beat-store-container {
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: rgb(30, 30, 30);
 }
 
 .beat-store-home {
     z-index: 3;
     position: absolute;
     height: auto;
+    filter: invert(100);
     top: 16px;
     right: 42px;
     width: 35px;
     padding-bottom: 5px;
-    transition: all ease-in 0.2s;
+    transition: all ease-in-out 0.1s;
     &:hover {
         cursor: pointer;
-        border-bottom: red 3px solid;
+        border-bottom: rgb(0, 213, 255) 3px solid;
     }
 }
 
