@@ -35,6 +35,17 @@ stereo.addEventListener('click', function() {
     }
 })
 
+const dj = document.querySelector('.dj');
+dj.addEventListener('click', function() {
+    const soundcloud = document.querySelector('.soundcloud');
+    if (soundcloud.style.visibility == 'visible') {
+        soundcloud.style.visibility = 'hidden'
+    } else {
+        soundcloud.style.visibility = 'visible';
+    }
+})
+
+
 // MUSIC PLAYER
 
 // Select all the elements in the HTML page

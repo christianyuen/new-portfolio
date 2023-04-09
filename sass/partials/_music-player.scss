@@ -3,15 +3,13 @@
 .music-player {
   visibility: hidden;
   background-image: linear-gradient(to right, rgb(0, 255, 0), rgb(8, 84, 0), black);
-  width: 400px;
+  width: 350px;
   height: 10;
   top: 0;
   bottom: 0;
   position: absolute;
   z-index: 10;
   border: 1px solid white;
-  /* Smoothly transition the background color */
-  transition: background-color .5s;
   }
   
   /* Using flex with the column direction to
@@ -51,11 +49,11 @@
   }
   
   .track-name {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   
   .track-artist {
-  font-size: 1.5rem;
+  font-size: 1rem;
   }
   
   /* Using flex with the row direction to
@@ -69,7 +67,7 @@
   .playpause-track,
   .prev-track,
   .next-track {
-  padding: 25px;
+  padding: 20px;
   opacity: 0.8;
   
   /* Smoothly transition the opacity */
@@ -85,7 +83,7 @@
   
   /* Define the slider width so that it scales properly */
   .slider_container {
-  width: 75%;
+  width: 80%;
   max-width: 400px;
   display: flex;
   justify-content: center;
