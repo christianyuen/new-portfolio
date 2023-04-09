@@ -244,17 +244,18 @@
 .info-hover {
     visibility: hidden;
     position: absolute;
-    z-index: 4;
+    z-index: 10;
     background-color: black;
-    top: 32%;
-    left: 50.5%;
+    top: 86%;
+    left: 60.6%;
+    // width: 34%;
     border: 1px white solid;
     opacity: 0.8;
     p {
         color: white;
         padding: 10px 20px;
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 }
 // ***
