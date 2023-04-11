@@ -1,8 +1,18 @@
 // source code - https://codepen.io/webandapp/pen/reVmyN
+.music-player-full-page {
+  background-image:black;
+  width: 100vw;
+  height: 10;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  border: 1px solid rgb(0, 255, 0);
+  }
+
 
 .music-player {
   visibility: hidden;
-  background-image: linear-gradient(to right, rgb(0, 255, 0), rgb(8, 84, 0), black);
+  background-color: black;
   width: 350px;
   height: 10;
   top: 0;
@@ -10,6 +20,9 @@
   position: absolute;
   z-index: 10;
   border: 1px solid white;
+  &:hover {
+    border: 1px solid rgb(89, 255, 0);
+  }
   }
   
   /* Using flex with the column direction to
