@@ -10,21 +10,21 @@
 
 .skills-paper {
     height: 90vh;
-    width: 43vw;
+    width: 50vw;
     z-index: 2;
     position: absolute;
 }
 
 .skills-title {
     height: 90vh;
-    width: 43vw;
+    width: 50vw;
     z-index: 3;
     position: absolute;
 }
 
 .skill {
     height: 90vh;
-    width: 43vw;
+    width: 50vw;
     z-index: 4;
     position: absolute;
     &:hover + .skill-names,
@@ -36,7 +36,7 @@
 
 .skill-names {
     height: 90vh;
-    width: 43vw;
+    width: 50vw;
     z-index: 3;
     position: absolute;
     display: none;

@@ -1,7 +1,7 @@
 // create an app object and intialize function
 const app = {};
 
-// event listener
+// Lights - On/Off
 const lights = document.querySelector('.switch');
 
 lights.addEventListener('click', function() {
@@ -14,6 +14,7 @@ lights.addEventListener('click', function() {
     }
 });
 
+// Info - On/Off
 const info = document.querySelector('.info');
 info.addEventListener('click', function() {
     console.log('click me')
@@ -25,6 +26,7 @@ info.addEventListener('click', function() {
     }
 })
 
+// Music Player - On/Off
 const stereo = document.querySelector('.stereo');
 stereo.addEventListener('click', function() {
     const musicPlayer = document.querySelector('.music-player');
@@ -35,6 +37,7 @@ stereo.addEventListener('click', function() {
     }
 })
 
+// Soundcloud Player - On/Off
 const dj = document.querySelector('.dj');
 dj.addEventListener('click', function() {
     const soundcloud = document.querySelector('.soundcloud');

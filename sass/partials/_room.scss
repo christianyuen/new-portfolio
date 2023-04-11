@@ -166,9 +166,12 @@
     z-index: 10;
     top: 52%;
     left: 5%;
-    width: 28%;
-    height: 32%;
+    width: 33%;
+    height: 29%;
     border: 1px white solid;
+    &:hover {
+        border: 2px rgb(47, 255, 0) solid; 
+    }
 }
 
 // ***
@@ -259,7 +262,7 @@
     z-index: 10;
     background-color: black;
     top: 86%;
-    left: 60.6%;
+    left: 62.6%;
     // width: 34%;
     border: 1px white solid;
     opacity: 0.8;
@@ -267,7 +270,7 @@
         color: white;
         padding: 10px 20px;
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
 // ***

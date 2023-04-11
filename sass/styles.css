@@ -386,9 +386,12 @@ header {
   z-index: 10;
   top: 52%;
   left: 5%;
-  width: 28%;
-  height: 32%;
+  width: 33%;
+  height: 29%;
   border: 1px white solid;
+}
+.soundcloud:hover {
+  border: 2px rgb(47, 255, 0) solid;
 }
 
 .github {
@@ -468,7 +471,7 @@ header {
   z-index: 10;
   background-color: black;
   top: 86%;
-  left: 60.6%;
+  left: 62.6%;
   border: 1px white solid;
   opacity: 0.8;
 }
@@ -476,7 +479,7 @@ header {
   color: white;
   padding: 10px 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .contact {
@@ -981,21 +984,21 @@ body {
 
 .skills-paper {
   height: 90vh;
-  width: 43vw;
+  width: 50vw;
   z-index: 2;
   position: absolute;
 }
 
 .skills-title {
   height: 90vh;
-  width: 43vw;
+  width: 50vw;
   z-index: 3;
   position: absolute;
 }
 
 .skill {
   height: 90vh;
-  width: 43vw;
+  width: 50vw;
   z-index: 4;
   position: absolute;
 }
@@ -1005,7 +1008,7 @@ body {
 
 .skill-names {
   height: 90vh;
-  width: 43vw;
+  width: 50vw;
   z-index: 3;
   position: absolute;
   display: none;
@@ -1254,4 +1257,98 @@ i.fa-pause-circle,
 i.fa-step-forward,
 i.fa-step-backward {
   cursor: pointer;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.p-menu1 {
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+}
+
+/* Hamburger */
+.hamburger1 {
+  height: 39px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  z-index: 120;
+  cursor: pointer;
+  filter: invert(100);
+}
+
+.hamburger1 div {
+  background-color: rgb(61, 61, 61);
+  position: relative;
+  width: 40px;
+  height: 5px;
+  margin-top: 7px;
+  transition: all 0.2s ease-in-out;
+}
+
+#toggle1 {
+  display: none;
+}
+
+#toggle1:checked + .hamburger1 .top {
+  transform: rotate(-45deg);
+  margin-top: 22.5px;
+}
+
+#toggle1:checked + .hamburger1 .meat {
+  transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+#toggle1:checked + .hamburger1 .bottom {
+  transform: scale(0);
+}
+
+#toggle1:checked ~ .menu1 {
+  height: 340px;
+}
+
+/* Menu */
+.menu1 {
+  position: absolute;
+  width: 100vw;
+  background-color: black;
+  text-align: center;
+  display: flex;
+  padding: 0;
+  list-style: none;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.4s ease;
+  z-index: 120;
+  transition: all 0.3s ease;
+  flex-direction: column;
+}
+
+.menu1 a:first-child {
+  margin-top: 40px;
+}
+
+.menu1 a:last-child {
+  margin-bottom: 40px;
+}
+
+.link1 {
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  font: 700 20px "Oswald", sans-serif;
+}
+
+.link1:hover {
+  background-color: #fff;
+  color: rgb(61, 61, 61);
+  transition: all 0.3s ease;
 }/*# sourceMappingURL=styles.css.map */
