@@ -438,8 +438,8 @@ a {
   z-index: 9;
   transition: all 0.3s ease-in-out;
 }
-.dj:hover, .dj:hover + .mixer-hover, .dj:focus {
-  display: flex;
+.dj:hover, .dj:hover + .dj-glow, .dj:focus {
+  visibility: visible;
   transform: scale(1.1);
   cursor: pointer;
 }
@@ -465,7 +465,7 @@ a {
 }
 
 .mixer-neon {
-  display: none;
+  visibility: hidden;
   top: 81.9%;
   left: 29.3%;
   width: 100%;
@@ -566,8 +566,8 @@ a {
   position: absolute;
   z-index: 10;
   background-color: black;
-  top: 86%;
-  left: 62.6%;
+  top: 63%;
+  left: 26.6%;
   border: 1px white solid;
   opacity: 0.8;
 }
@@ -575,7 +575,7 @@ a {
   color: white;
   padding: 10px 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .contact {
@@ -1001,7 +1001,7 @@ a {
   background: url(clock.png) no-repeat;
   background-size: auto;
   background-size: 10px;
-  z-index: 7;
+  z-index: 2;
   top: 0;
   right: 93px;
 }
@@ -1219,7 +1219,7 @@ a {
 
 .enter {
   color: white;
-  font-size: 8rem;
+  font-size: 6rem;
   transition: all 0.3s ease-in-out;
 }
 .enter:hover, .enter:focus {

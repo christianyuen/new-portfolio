@@ -116,9 +116,9 @@
     z-index: 9;
     transition: all 0.3s ease-in-out;
     &:hover,
-    &:hover + .mixer-hover,
+    &:hover + .dj-glow,
     &:focus {
-        display: flex;
+        visibility: visible;
         transform: scale(1.1);
         cursor: pointer;
     }
@@ -129,6 +129,7 @@
 }
 
 .dj-glow {
+    // visibility: hidden;
     top: 81.9%;
     left: 29.3%;
     width: 35.2%;
@@ -149,7 +150,7 @@
 }
 
 .mixer-neon {
-    display: none;
+    visibility: hidden;
     top: 81.9%;
     left: 29.3%;
     width: 100%;
@@ -261,16 +262,15 @@
     position: absolute;
     z-index: 10;
     background-color: black;
-    top: 86%;
-    left: 62.6%;
-    // width: 34%;
+    top: 63%;
+    left: 26.6%;
     border: 1px white solid;
     opacity: 0.8;
     p {
         color: white;
         padding: 10px 20px;
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 }
 // ***
@@ -731,7 +731,7 @@
     background: url(clock.png) no-repeat;
     background-size: auto;
     background-size: 10px;
-    z-index: 7;
+    z-index: 2;
     top: 0;
     right: 93px;
 }
