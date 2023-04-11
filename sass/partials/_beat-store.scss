@@ -1,7 +1,7 @@
 .beat-store-container {
     display: flex;
     justify-content: center;
-    background-color: rgb(30, 30, 30);
+    background-color: black;
 }
 
 .beat-store-home {
@@ -10,10 +10,11 @@
     height: auto;
     filter: invert(100);
     top: 16px;
-    right: 42px;
-    width: 35px;
+    right: 35px;
+    width: 40px;
     padding-bottom: 5px;
     transition: all ease-in-out 0.1s;
+    opacity: 0.7;
     &:hover {
         cursor: pointer;
         border-bottom: rgb(0, 213, 255) 3px solid;
@@ -24,12 +25,14 @@
     display: flex;
     justify-content: center;
     position: relative;
-    width: 80%;
+    width: 100%;
     padding-top: 60px;
     padding-bottom: 200px;
+
 }
 
 .beat-store {
     height: 85vh;
+    border: none;
 }
 
