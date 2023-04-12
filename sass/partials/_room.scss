@@ -1,8 +1,10 @@
+
 .room {
     width: 100%;
     height: 100%;
     position: relative;
 }
+
 // ANIMATION
 .ashtray-animation {
     position: absolute;
@@ -67,8 +69,8 @@
 
 .bulletin-board {
     top: 7%;
-    left: 34%;
-    width: 43%;
+    left: 33%;
+    width: 40%;
     height: 36%;
     position: absolute;
     z-index: 3;
@@ -166,9 +168,9 @@
     position: absolute;
     z-index: 10;
     top: 65%;
-    left: 5%;
+    left: 4%;
     width: 28%;
-    height: 26%;
+    height: 30%;
     border: 1px white solid;
     &:hover {
         border: 2px rgb(47, 255, 0) solid; 
@@ -182,6 +184,7 @@
     position: absolute;
     z-index: 5;
     width: 5%;
+    height: 4.3%;
     top: 33%;
     right: 33%;
     transition: all ease-in-out 0.2s;
@@ -194,9 +197,9 @@
 // ABOUT
 .about-me {
     top: 12%;
-    right: 37.5%;
-    width: 15%;
-    height: 17%;
+    right: 44.5%;
+    width: 14.2%;
+    height: 16.6%;
     position: absolute;
     z-index: 5;
     transition: all 0.3s ease-in-out;
@@ -213,10 +216,10 @@
 }
 
 .about-neon {
-    top: 2.1%;
-    right: 31.5%;
-    width: 28.5%;
-    height: 38%;
+    top: 2.6%;
+    right: 38.9%;
+    width: 27.1%;
+    height: 36.1%;
     position: absolute;
     z-index: 4;
     pointer-events: none;
@@ -227,8 +230,8 @@
 
 // INFO
 .info {
-    top: 22%;
-    left: 66%;
+    top: 23%;
+    left: 57%;
     width: 4%;
     height: 6%;
     position: absolute;
@@ -245,8 +248,8 @@
 }
 
 .info-neon {
-    top: 18.1%;
-    left: 62.7%;
+    top: 19.1%;
+    left: 53.7%;
     width: 10.1%;
     height: 14.2%;
     position: absolute;
@@ -278,7 +281,7 @@
 // CONTACT
 .contact {
     top: 12%;
-    left: 65%;
+    left: 57%;
     width: 8%;
     height: 11%;
     position: absolute;
@@ -299,9 +302,9 @@
 
 .contact-neon {
     top: 6.9%;
-    left: 62%;
+    left: 54%;
     width: 14.7%;
-    height: 20%;
+    height: 19%;
     position: absolute;
     z-index: 4;
     pointer-events: none;
@@ -500,7 +503,7 @@
 
 .speaker-glow {
     top: 36.05%;
-    left: 71.75%;
+    left: 71.9%;
     width: 3.2%;
     height: 20%;
     position: absolute;
@@ -541,6 +544,7 @@
 
 // PHONE
 .phone {
+    display: none;
     top: 30%;
     left: 69.5%;
     width: 10%;
@@ -723,54 +727,25 @@
 }
 
 // CLOCK
-#clockContainer {
+
+.clock {
     position: absolute;
-    margin: auto;
-    height: 18%;
-    width: 23%;
-    background: url(clock.png) no-repeat;
-    background-size: auto;
-    background-size: 10px;
-    z-index: 2;
-    top: 0;
-    right: 93px;
+    z-index: 6;
+    top: 36.75%;
+    left: 75.7%;
+    transform: translateX(-50%) translateY(-50%);
+    color: rgb(0, 255, 0);
+    font-size: 1.7vw;
+    font-family: "digital";
+    letter-spacing: 5px;
+    pointer-events: none;
 }
 
-#hour,
-#minute,
-#second {
-	position: absolute;
-	background: black;
-	border-radius: 10px;
-	transform-origin: bottom;
+.clock-image {
+    position: absolute;
+    z-index: 6;
+    top: 33%;
+    left: 70.5%;
+    width: 9%;
+    height: 6%;
 }
-
-#hour {
-	width: 1.8%;
-	height: 25%;
-	top: 25%;
-	left: 48.85%;
-	opacity: 0.8;
-}
-
-#minute {
-	width: 1.6%;
-	height: 30%;
-	top: 19%;
-	left: 48.9%;
-	opacity: 0.8;
-}
-
-#second {
-	width: 1%;
-	height: 40%;
-	top: 9%;
-	left: 49.25%;
-	opacity: 0.8;
-}
-
-
-
-
-
-
