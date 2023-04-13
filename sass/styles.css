@@ -492,10 +492,10 @@ a {
   left: 4%;
   width: 28%;
   height: 30%;
-  border: 1px white solid;
+  border: 1px rgb(47, 255, 0) solid;
 }
 .soundcloud:hover {
-  border: 2px rgb(47, 255, 0) solid;
+  border: 2px white solid;
 }
 
 .github {
