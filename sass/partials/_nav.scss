@@ -10,6 +10,9 @@ a {
     z-index: 10;
 }
 
+.navigation {
+    display: flex;
+}
   /* Hamburger */
 .hamburger1 {
     height: 39px;
@@ -79,7 +82,7 @@ a {
 }
 
 .menu1 a:first-child {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .menu1 a:last-child {

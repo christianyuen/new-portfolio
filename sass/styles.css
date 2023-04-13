@@ -246,6 +246,10 @@ a {
   z-index: 10;
 }
 
+.navigation {
+  display: flex;
+}
+
 /* Hamburger */
 .hamburger1 {
   height: 39px;
@@ -310,7 +314,7 @@ a {
 }
 
 .menu1 a:first-child {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .menu1 a:last-child {
@@ -527,10 +531,10 @@ a {
 }
 
 .about-neon {
-  top: 2.6%;
-  right: 38.9%;
-  width: 27.1%;
-  height: 36.1%;
+  top: 5.6%;
+  right: 40.9%;
+  width: 23.1%;
+  height: 30.1%;
   position: absolute;
   z-index: 4;
   pointer-events: none;
@@ -569,18 +573,28 @@ a {
 .info-hover {
   visibility: hidden;
   position: absolute;
+  position: absolute;
   z-index: 10;
   background-color: black;
-  top: 63%;
-  left: 26.6%;
-  border: 1px white solid;
-  opacity: 0.8;
+  top: 31%;
+  left: 40%;
+  border: 1px rgb(0, 255, 17) solid;
+  width: 275px;
+  height: 197px;
+  font-family: "Courier New", Courier, monospace;
 }
 .info-hover p {
   color: white;
   padding: 10px 20px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 0.7rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9rem;
+  margin: 0;
+}
+.info-hover p:first-child {
+  margin-top: 6px;
+}
+.info-hover p:last-child {
+  margin-top: -10px;
 }
 
 .contact {
@@ -638,15 +652,25 @@ a {
 }
 
 .lamp-neon {
-  top: 16.7%;
-  left: 72.5%;
-  width: 16.5%;
-  height: 23%;
+  top: 19.3%;
+  left: 74.5%;
+  width: 12.5%;
+  height: 17%;
   position: absolute;
   z-index: 3;
   pointer-events: none;
   transition: all 0.1s ease-in-out;
   visibility: hidden;
+}
+
+.power-socket {
+  top: 1%;
+  left: 6.5%;
+  width: 91%;
+  height: 94%;
+  pointer-events: none;
+  position: absolute;
+  z-index: 3;
 }
 
 .power {
@@ -667,6 +691,46 @@ a {
   z-index: 4;
   position: absolute;
   transition: all 0s ease-in-out;
+  pointer-events: none;
+}
+
+.cody-art {
+  top: 9%;
+  left: -6%;
+  width: 15%;
+  height: 34%;
+  position: absolute;
+  z-index: 6;
+  pointer-events: none;
+}
+
+.adam-art {
+  top: 9%;
+  left: -6%;
+  width: 15%;
+  height: 34%;
+  position: absolute;
+  z-index: 6;
+  pointer-events: none;
+}
+
+.clothing {
+  top: 69%;
+  left: 72%;
+  width: 30%;
+  height: 34%;
+  position: absolute;
+  z-index: 6;
+  pointer-events: none;
+}
+
+.lilypadmag {
+  top: 18%;
+  left: 31%;
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
   pointer-events: none;
 }
 
@@ -1407,4 +1471,54 @@ i.fa-step-backward {
 .soundcloud-full-page {
   width: 100%;
   height: 100%;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 60px 100px;
+  position: relative;
+}
+
+.send-email {
+  filter: invert(100);
+  width: 250px;
+  transition: all ease-in-out 0.3s;
+}
+.send-email:hover, .send-email:hover + .contact-hover {
+  transform: scale(1.1);
+  visibility: visible;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+.flex-container h1 {
+  margin-top: 30px;
+  color: rgb(21, 255, 0);
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+}
+
+.contact-hover {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.contact-hover-text {
+  color: rgb(21, 255, 0);
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  margin-top: 290px;
 }/*# sourceMappingURL=styles.css.map */
