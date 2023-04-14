@@ -229,6 +229,8 @@ html {
 header {
   width: 100vw;
   height: 100vh;
+  padding: 9px;
+  background-image: linear-gradient(to bottom left, rgb(0, 255, 0), black, black, black);
 }
 
 @font-face {
@@ -404,7 +406,7 @@ a {
 .bulletin-board {
   top: 7%;
   left: 33%;
-  width: 40%;
+  width: 37.5%;
   height: 36%;
   position: absolute;
   z-index: 3;
@@ -499,6 +501,7 @@ a {
 }
 
 .github {
+  display: none;
   position: absolute;
   z-index: 5;
   width: 5%;
@@ -637,8 +640,8 @@ a {
 }
 
 .switch {
-  top: 24%;
-  left: 79%;
+  top: 29%;
+  left: 80%;
   width: 3.3%;
   height: 7%;
   position: absolute;
@@ -652,8 +655,8 @@ a {
 }
 
 .lamp-neon {
-  top: 19.3%;
-  left: 74.5%;
+  top: 24.3%;
+  left: 75.5%;
   width: 12.5%;
   height: 17%;
   position: absolute;
@@ -695,20 +698,20 @@ a {
 }
 
 .cody-art {
-  top: 9%;
-  left: -6%;
-  width: 15%;
-  height: 34%;
+  top: 7%;
+  left: 12.7%;
+  width: 15.6%;
+  height: 31%;
   position: absolute;
-  z-index: 6;
+  z-index: 2;
   pointer-events: none;
 }
 
 .adam-art {
-  top: 9%;
-  left: -6%;
-  width: 15%;
-  height: 34%;
+  top: 10%;
+  left: 0%;
+  width: 9%;
+  height: 32%;
   position: absolute;
   z-index: 6;
   pointer-events: none;
@@ -717,8 +720,8 @@ a {
 .clothing {
   top: 69%;
   left: 72%;
-  width: 30%;
-  height: 34%;
+  width: 28%;
+  height: 31%;
   position: absolute;
   z-index: 6;
   pointer-events: none;
@@ -764,7 +767,7 @@ a {
 .dresser {
   top: 25%;
   left: 84%;
-  width: 22%;
+  width: 16%;
   height: 60%;
   position: absolute;
   z-index: 3;
@@ -1091,8 +1094,9 @@ a {
 }
 
 .about-me-page {
-  height: 100vh;
-  width: 70vw;
+  height: 649px;
+  width: 772px;
+  z-index: 1;
   z-index: 1;
 }
 
@@ -1125,6 +1129,14 @@ a {
   display: flex;
   justify-content: center;
   background-color: black;
+  flex-direction: column;
+}
+.beat-store-container h1 {
+  margin-top: 30px;
+  color: rgb(21, 255, 0);
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
 }
 
 .beat-store-home {
@@ -1149,7 +1161,6 @@ a {
   justify-content: center;
   position: relative;
   width: 100%;
-  padding-top: 60px;
   padding-bottom: 200px;
 }
 
@@ -1213,6 +1224,13 @@ a {
   justify-content: center;
   align-items: center;
 }
+.projects h1 {
+  margin-top: 30px;
+  color: rgb(21, 255, 0);
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+}
 .projects .project {
   margin-top: 50px;
   display: flex;
@@ -1224,7 +1242,7 @@ a {
   margin-bottom: 100px;
 }
 .projects .project:first-of-type {
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
 .project-img {
@@ -1255,7 +1273,7 @@ a {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  border: 1px solid white;
+  border: 1px solid rgb(38, 255, 0);
 }
 
 .iconContainer {
@@ -1321,10 +1339,10 @@ a {
   bottom: 0;
   position: absolute;
   z-index: 10;
-  border: 1px solid white;
+  border: 1px solid rgb(89, 255, 0);
 }
 .music-player:hover {
-  border: 1px solid rgb(89, 255, 0);
+  border: 1px solid white;
 }
 
 /* Using flex with the column direction to
@@ -1463,7 +1481,9 @@ i.fa-step-backward {
   display: flex;
   height: 100vh;
   width: 100vw;
-  padding: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 160px;
   justify-content: center;
   flex-direction: column;
 }
@@ -1471,6 +1491,18 @@ i.fa-step-backward {
 .soundcloud-full-page {
   width: 100%;
   height: 100%;
+  border: 1px solid rgb(0, 255, 0);
+}
+.soundcloud-full-page:hover {
+  border: 1px solid white;
+}
+
+h1 {
+  margin-top: 30px;
+  color: rgb(21, 255, 0);
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
 }
 
 .contact-container {
@@ -1521,4 +1553,278 @@ i.fa-step-backward {
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
   margin-top: 290px;
+}
+
+@media (max-width: 810px) {
+  .dresser {
+    display: none;
+  }
+  .stereo {
+    display: none;
+  }
+  .door {
+    display: none;
+  }
+  .adam-art {
+    display: none;
+  }
+  .clothing {
+    top: 66%;
+    left: 84%;
+    width: 35%;
+    height: 33%;
+  }
+  .lilypadmag {
+    top: 9%;
+    left: 34%;
+    width: 73%;
+    height: 110%;
+  }
+  .baseboard {
+    top: -40%;
+    height: 150%;
+  }
+  .desk {
+    top: 48%;
+    left: -1%;
+    width: 101%;
+    height: 42%;
+  }
+  .right-speaker {
+    top: 32%;
+    left: 80%;
+    width: 13.5%;
+    height: 21%;
+  }
+  .left-speaker {
+    top: 32%;
+    left: 13%;
+    width: 13.5%;
+    height: 21%;
+  }
+  .keyboard {
+    top: 43%;
+    left: 46%;
+    width: 35%;
+    height: 9%;
+  }
+  .speaker-glow {
+    top: 30.9%;
+    left: 81.3%;
+    width: 5.2%;
+    height: 26%;
+  }
+  .left-speaker-glow {
+    top: 31.3%;
+    left: 12.3%;
+    width: 5.2%;
+    height: 26%;
+  }
+  .keyboard-glow {
+    top: 40%;
+    left: 57.5%;
+    width: 28%;
+    height: 8%;
+  }
+  .dj {
+    top: 83%;
+    left: 34%;
+    width: 33%;
+    height: 17%;
+  }
+  .mixer-wire {
+    top: 62%;
+    left: 27%;
+    width: 15%;
+    height: 25%;
+  }
+  .soundcloud {
+    top: 48%;
+    left: 9%;
+    width: 41%;
+    height: 34%;
+  }
+  .clock-image {
+    top: 29%;
+    left: 81%;
+    width: 12%;
+    height: 6%;
+  }
+  .clock {
+    top: 32.75%;
+    left: 87.7%;
+  }
+  .computer-monitor {
+    top: 24%;
+    left: 26%;
+    width: 25.8%;
+    height: 30%;
+  }
+  .computer-keyboard {
+    top: 55%;
+    left: 13%;
+    width: 38%;
+    height: 7.5%;
+  }
+  .computer-tower {
+    top: 56%;
+    left: 50%;
+    width: 11%;
+    height: 28%;
+  }
+  .black-screen {
+    width: 14.3%;
+    right: 59.3%;
+    top: 26.5%;
+    height: 19%;
+  }
+  .internet {
+    width: 13.8%;
+    right: 59.5%;
+    top: 27%;
+    height: 15.4%;
+  }
+  .computer-glow {
+    top: 16.4%;
+    left: 3.7%;
+    width: 50%;
+    height: 40%;
+  }
+  .tower-glow {
+    top: 60.7%;
+    left: 50.3%;
+    width: 4.5%;
+    height: 3%;
+  }
+  .mouse-glow {
+    top: 56.2%;
+    left: 42.2%;
+    width: 4.5%;
+    height: 3%;
+  }
+  .switch {
+    top: 18%;
+    left: 90%;
+    width: 5.3%;
+    height: 9%;
+  }
+  .lamp-neon {
+    top: 14.3%;
+    left: 86.5%;
+    width: 12.5%;
+    height: 17%;
+  }
+  .lamp {
+    top: 16.5%;
+    left: -0.5%;
+    width: 12%;
+    height: 66%;
+  }
+  .light {
+    top: -13px;
+    left: -19%;
+    width: 100%;
+    height: 107%;
+  }
+  .ashtray-animation {
+    display: none;
+    z-index: 8;
+    top: 53.5%;
+    left: 5%;
+    width: 8%;
+    height: 9%;
+  }
+  .chair {
+    top: 44%;
+    left: 1%;
+    width: 31%;
+    height: 56%;
+  }
+  .plant {
+    top: 4%;
+    left: 9%;
+    width: 23%;
+    height: 31%;
+  }
+  .poster {
+    top: 6%;
+    left: 1%;
+    width: 27%;
+    height: 37%;
+  }
+  .bulletin-board {
+    top: 2%;
+    left: 29%;
+    width: 57.5%;
+    height: 40%;
+  }
+  .info {
+    top: 23%;
+    left: 63%;
+    width: 7%;
+    height: 8%;
+  }
+  .info-neon {
+    top: 19.1%;
+    left: 58.7%;
+    width: 16.1%;
+    height: 16.2%;
+  }
+  .info-hover {
+    top: 33%;
+  }
+  .contact {
+    top: 9%;
+    left: 67%;
+    width: 12%;
+    height: 14%;
+  }
+  .contact-neon {
+    top: 4.9%;
+    left: 64%;
+    width: 17.7%;
+    height: 19%;
+  }
+  .about-me {
+    top: 7%;
+    right: 40.5%;
+    width: 22.2%;
+    height: 19.6%;
+  }
+  .about-neon {
+    top: -0.4%;
+    right: 37.9%;
+    width: 32.1%;
+    height: 35.1%;
+  }
+  .power {
+    top: -14.6%;
+    left: -19%;
+    width: 130%;
+    height: 120%;
+  }
+  .power-glow {
+    top: 69.9%;
+    left: 37.3%;
+    width: 17%;
+    height: 20.8%;
+  }
+  .power-socket {
+    top: -20%;
+    left: -22.5%;
+    width: 149%;
+    height: 125%;
+  }
+  .tech-stack {
+    top: 67%;
+    left: 62%;
+    width: 25%;
+    height: 20%;
+  }
+  .tech-stack-neon {
+    top: 60%;
+    left: 54.5%;
+    width: 36%;
+    height: 36.3%;
+  }
 }/*# sourceMappingURL=styles.css.map */

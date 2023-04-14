@@ -6,6 +6,8 @@ html {
 header {
     width: 100vw;
     height: 100vh;
+    padding: 9px;
+    background-image: linear-gradient(to bottom left, rgb(0, 255, 0), black, black, black);
 }
 
 @font-face {

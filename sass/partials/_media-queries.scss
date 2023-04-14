@@ -1,0 +1,322 @@
+@media (max-width: 810px) {
+
+    // Room
+    .dresser {
+        display: none;
+    }
+
+    .stereo {
+        display: none;
+    }
+    
+    .door {
+        display: none;
+    }
+
+    .adam-art {
+        display: none;
+    }
+
+    .clothing {
+        top: 66%;
+        left: 84%;
+        width: 35%;
+        height: 33%;
+    }
+
+    .lilypadmag {
+        top: 9%;
+        left: 34%;
+        width: 73%;
+        height: 110%;
+    }
+
+    .baseboard {
+        top: -40%;
+        height: 150%;
+    }
+
+    .desk {
+        top: 48%;
+        left: -1%;
+        width: 101%;
+        height: 42%;
+    }
+
+    .right-speaker {
+        top: 32%;
+        left: 80%;
+        width: 13.5%;
+        height: 21%;
+    }
+
+    .left-speaker {
+        top: 32%;
+        left: 13%;
+        width: 13.5%;
+        height: 21%;
+    }
+    
+    .keyboard {
+        top: 43%;
+        left: 46%;
+        width: 35%;
+        height: 9%;
+    }
+
+    .speaker-glow {
+        top: 30.9%;
+        left: 81.3%;
+        width: 5.2%;
+        height: 26%;
+    }
+
+    .left-speaker-glow {
+        top: 31.3%;
+        left: 12.3%;
+        width: 5.2%;
+        height: 26%;
+    }
+
+    .keyboard-glow {
+        top: 40%;
+        left: 57.5%;
+        width: 28%;
+        height: 8%;
+    }
+
+    .dj {
+        top: 83%;
+        left: 34%;
+        width: 33%;
+        height: 17%;
+    }
+
+    .mixer-wire {
+        top: 62%;
+        left: 27%;
+        width: 15%;
+        height: 25%;
+    }
+
+    .soundcloud {
+        top: 48%;
+        left: 9%;
+        width: 41%;
+        height: 34%;
+    }
+
+    .clock-image {
+        top: 29%;
+        left: 81%;
+        width: 12%;
+        height: 6%;
+    }
+
+    .clock {
+        top: 32.75%;
+        left: 87.7%;
+    }
+
+    .computer-monitor {
+        top: 24%;
+        left: 26%;
+        width: 25.8%;
+        height: 30%;
+    }
+
+    .computer-keyboard {
+        top: 55%;
+        left: 13%;
+        width: 38%;
+        height: 7.5%;
+    }
+
+    .computer-tower {
+        top: 56%;
+        left: 50%;
+        width: 11%;
+        height: 28%;
+    }
+
+    .black-screen {
+        width: 14.3%;
+        right: 59.3%;
+        top: 26.5%;
+        height: 19%;
+    }
+
+    .internet {
+        width: 13.8%;
+        right: 59.5%;
+        top: 27%;
+        height: 15.4%;
+    }
+
+    .computer-glow {
+        top: 16.4%;
+        left: 3.7%;
+        width: 50%;
+        height: 40%;
+    }
+
+    .tower-glow {
+        top: 60.7%;
+        left: 50.3%;
+        width: 4.5%;
+        height: 3%;
+    }
+
+    .mouse-glow {
+        top: 56.2%;
+        left: 42.2%;
+        width: 4.5%;
+        height: 3%;
+    }
+
+    .switch {
+        top: 18%;
+        left: 90%;
+        width: 5.3%;
+        height: 9%;
+    }
+
+    .lamp-neon {
+        top: 14.3%;
+        left: 86.5%;
+        width: 12.5%;
+        height: 17%;
+    }
+
+    .lamp {
+        top: 16.5%;
+        left: -0.5%;
+        width: 12%;
+        height: 66%;
+    }
+
+    .light {
+        top: -13px;
+        left: -19%;
+        width: 100%;
+        height: 107%;
+    }
+
+    .ashtray-animation {
+        display: none;
+        z-index: 8;
+        top: 53.5%;
+        left: 5%;
+        width: 8%;
+        height: 9%;
+    }
+
+    .chair {
+        top: 44%;
+        left: 1%;
+        width: 31%;
+        height: 56%;
+    }
+
+    .plant {
+        top: 4%;
+        left: 9%;
+        width: 23%;
+        height: 31%;
+    }
+
+    .poster {
+        top: 6%;
+        left: 1%;
+        width: 27%;
+        height: 37%;
+    }
+
+    .bulletin-board {
+        top: 2%;
+        left: 29%;
+        width: 57.5%;
+        height: 40%;
+    }
+
+    .info {
+        top: 23%;
+        left: 63%;
+        width: 7%;
+        height: 8%;
+    }
+
+    .info-neon {
+        top: 19.1%;
+        left: 58.7%;
+        width: 16.1%;
+        height: 16.2%;
+    }
+
+    .info-hover {
+        top: 33%
+    }
+
+    .contact {
+        top: 9%;
+        left: 67%;
+        width: 12%;
+        height: 14%;
+    }
+
+    .contact-neon {
+        top: 4.9%;
+        left: 64%;
+        width: 17.7%;
+        height: 19%;
+    }
+
+    .about-me {
+        top: 7%;
+        right: 40.5%;
+        width: 22.2%;
+        height: 19.6%;
+    }
+
+    .about-neon {
+        top: -0.4%;
+        right: 37.9%;
+        width: 32.1%;
+        height: 35.1%;
+    }
+
+    .power {
+        top: -14.6%;
+        left: -19%;
+        width: 130%;
+        height: 120%;
+    }
+
+    .power-glow {
+        top: 69.9%;
+        left: 37.3%;
+        width: 17%;
+        height: 20.8%;
+    }
+
+    .power-socket {
+        top: -20%;
+        left: -22.5%;
+        width: 149%;
+        height: 125%;
+    }
+
+    .tech-stack {
+        top: 67%;
+        left: 62%;
+        width: 25%;
+        height: 20%;
+    }
+
+    .tech-stack-neon {
+        top: 60%;
+        left: 54.5%;
+        width: 36%;
+        height: 36.3%;
+    }
+}
