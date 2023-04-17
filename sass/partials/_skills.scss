@@ -10,21 +10,22 @@
 }
 
 .skills-paper {
-    height: 640px;
-    width: 530px;
+    height: 550px;
+    width: 450px;
     z-index: 2;
     position: absolute;
 }
 
 .skills-title {
-    height: 800px;
+    height: 700px;
     width: 450px;
+    top: 70px;
     z-index: 3;
     position: absolute;
 }
 
 .skill {
-    height: 650px;
+    height: 550px;
     width: 480px;
     z-index: 4;
     position: absolute;
@@ -36,7 +37,7 @@
 }
 
 .skill-names {
-    height: 650px;
+    height: 550px;
     width: 480px;
     z-index: 4;
     position: absolute;
@@ -46,86 +47,25 @@
 }
 
 // MEDIA QUERIES
-
-// @media (min-width: 1300px) {
-//     .skills-paper {
-//         height: 82vh;
-//         width: 40vw;
-//     }
-
-//     .skills-title {
-//         height: 90vh;
-//         width: 41vw;
-//     }
-
-//     .skill {
-//         height: 87vh;
-//         width: 44vw;
-//     }
-
-//     .skill-names {
-//         height: 87vh;
-//         width: 44vw;
-//     }
-// }
-
-// @media (max-width: 800px) {
-//     .skills-paper {
-//         height: 82vh;
-//         width: 60vw;
-//     }
-
-//     .skills-title {
-//         height: 90vh;
-//         width: 61vw;
-//     }
-
-//     .skill {
-//         height: 87vh;
-//         width: 64vw;
-//     }
-
-//     .skill-names {
-//         height: 87vh;
-//         width: 64vw;
-//     }
-// }
-
 @media (max-width: 550px) {
     .skills-paper {
-        height: 620px;
-        width: 440px;
-        z-index: 2;
-        position: absolute;
+        height: 500px;
+        width: 400px;
     }
     
     .skills-title {
         height: 760px;
         width: 410px;
-        z-index: 3;
-        position: absolute;
     }
     
     .skill {
-        height: 650px;
-        width: 440px;
-        z-index: 4;
-        position: absolute;
-        &:hover + .skill-names,
-        &:hover,
-        &:focus {
-            display: inline-block;
-        }
+        height: 500px;
+        width: 400px;
     }
     
     .skill-names {
-        height: 650px;
-        width: 440px;
-        z-index: 4;
-        position: absolute;
-        display: none;
-        transition: all ease-in-out 0.3s;
-        pointer-events: none;
+        height: 500px;
+        width: 400px;
     }
 }
 
