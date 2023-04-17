@@ -4,10 +4,14 @@
 }
 
 .about-me-page {
-    height: 649px;
-    width: 772px;
+    height: 100%;
+    width: 76%;
     z-index: 1;
-    z-index: 1;
+    position: absolute;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .background {
@@ -34,3 +38,40 @@
         border-bottom: red 3px solid;
     }
 }
+
+// MEDIA QUERIES
+@media (min-width: 1200px) {
+    .about-me-page {
+        width: 60%;
+    }
+}
+
+@media (max-width: 750px) {
+    .about-me-page {
+        width: 100%;
+    }
+}
+
+@media (max-width: 580px) {
+    .about-me-page {
+        margin-top: 60px;
+        height: 80%;
+    }
+}
+
+@media (max-width: 475px) {
+    .about-me-page {
+        margin-top: 80px;
+        height: 70%;
+    }
+}
+
+@media (max-width: 380px) {
+    .about-me-page {
+        margin-top: 80px;
+        height: 70%;
+        width: 110%;
+    }
+}
+
+

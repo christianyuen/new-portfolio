@@ -4,27 +4,28 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    padding-top: 40px;
+    padding-top: 80px;
+    padding-bottom: 50px;
     position: relative;
 }
 
 .skills-paper {
-    height: 90vh;
-    width: 50vw;
+    height: 640px;
+    width: 530px;
     z-index: 2;
     position: absolute;
 }
 
 .skills-title {
-    height: 90vh;
-    width: 50vw;
+    height: 800px;
+    width: 450px;
     z-index: 3;
     position: absolute;
 }
 
 .skill {
-    height: 90vh;
-    width: 50vw;
+    height: 650px;
+    width: 480px;
     z-index: 4;
     position: absolute;
     &:hover + .skill-names,
@@ -35,11 +36,135 @@
 }
 
 .skill-names {
-    height: 90vh;
-    width: 50vw;
-    z-index: 3;
+    height: 650px;
+    width: 480px;
+    z-index: 4;
     position: absolute;
     display: none;
     transition: all ease-in-out 0.3s;
     pointer-events: none;
 }
+
+// MEDIA QUERIES
+
+// @media (min-width: 1300px) {
+//     .skills-paper {
+//         height: 82vh;
+//         width: 40vw;
+//     }
+
+//     .skills-title {
+//         height: 90vh;
+//         width: 41vw;
+//     }
+
+//     .skill {
+//         height: 87vh;
+//         width: 44vw;
+//     }
+
+//     .skill-names {
+//         height: 87vh;
+//         width: 44vw;
+//     }
+// }
+
+// @media (max-width: 800px) {
+//     .skills-paper {
+//         height: 82vh;
+//         width: 60vw;
+//     }
+
+//     .skills-title {
+//         height: 90vh;
+//         width: 61vw;
+//     }
+
+//     .skill {
+//         height: 87vh;
+//         width: 64vw;
+//     }
+
+//     .skill-names {
+//         height: 87vh;
+//         width: 64vw;
+//     }
+// }
+
+@media (max-width: 550px) {
+    .skills-paper {
+        height: 620px;
+        width: 440px;
+        z-index: 2;
+        position: absolute;
+    }
+    
+    .skills-title {
+        height: 760px;
+        width: 410px;
+        z-index: 3;
+        position: absolute;
+    }
+    
+    .skill {
+        height: 650px;
+        width: 440px;
+        z-index: 4;
+        position: absolute;
+        &:hover + .skill-names,
+        &:hover,
+        &:focus {
+            display: inline-block;
+        }
+    }
+    
+    .skill-names {
+        height: 650px;
+        width: 440px;
+        z-index: 4;
+        position: absolute;
+        display: none;
+        transition: all ease-in-out 0.3s;
+        pointer-events: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .skills-paper {
+        height: 400px;
+        width: 300px;
+        z-index: 2;
+        position: absolute;
+    }
+    
+    .skills-title {
+        height: 500px;
+        width: 300px;
+        z-index: 3;
+        position: absolute;
+    }
+    
+    .skill {
+        height: 400px;
+        width: 300px;
+        z-index: 4;
+        position: absolute;
+        &:hover + .skill-names,
+        &:hover,
+        &:focus {
+            display: inline-block;
+        }
+    }
+    
+    .skill-names {
+        height: 400px;
+        width: 300px;
+        z-index: 4;
+        position: absolute;
+        display: none;
+        transition: all ease-in-out 0.3s;
+        pointer-events: none;
+    }
+}
+
+
