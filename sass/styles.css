@@ -1590,6 +1590,27 @@ h1 {
   text-transform: uppercase;
 }
 
+@media (max-width: 810px) {
+  .radio-container {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 160px;
+  }
+}
+@media (max-width: 470px) {
+  .radio-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 160px;
+  }
+}
+@media (max-width: 410px) {
+  .radio-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 160px;
+  }
+}
 .contact-container {
   display: flex;
   justify-content: center;
@@ -1652,6 +1673,19 @@ h1 {
   .flex-container h1 {
     margin-top: 70px;
     margin-bottom: -20px;
+  }
+}
+@media (max-width: 810px) {
+  .projects .project {
+    width: 70%;
+  }
+}
+@media (max-width: 410px) {
+  .projects .project {
+    width: 100%;
+  }
+  .projects h1 {
+    margin-top: 70px;
   }
 }
 @media (max-width: 810px) {
