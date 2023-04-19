@@ -618,6 +618,13 @@
     }
 
     header {
-        height: 85vh;
+        height: 88vh;
+    }
+}
+
+@media (min-height: 800px) {
+    header {
+        margin-top: 90px;
+        height: 80vh;
     }
 }
