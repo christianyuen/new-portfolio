@@ -379,10 +379,14 @@
 
 @media (max-width: 480px) {
     // Base Styles
+    html {
+        overflow: hidden;
+    }
+
     header {
         padding: 0px;
-        padding-bottom: 90px;
-        padding-top: 20px;
+        padding-bottom: 80px;
+        // padding-top: 30px;
         background-image: none;
     }
 
