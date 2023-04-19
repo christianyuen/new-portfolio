@@ -235,7 +235,7 @@ header {
 
 @font-face {
   font-family: "digital";
-  src: url(/Users/christianyuen/Desktop/portfolio/fonts/digital-7.ttf);
+  src: url(../fonts/digital-7.ttf);
 }
 a {
   color: #fff;
