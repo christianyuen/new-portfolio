@@ -1130,6 +1130,11 @@ a {
   border-bottom: red 3px solid;
 }
 
+@media (min-height: 750px) {
+  .about-me-page {
+    height: 80%;
+  }
+}
 @media (min-width: 1300px) {
   .about-me-page {
     width: 60%;
@@ -1150,14 +1155,14 @@ a {
 @media (max-width: 475px) {
   .about-me-page {
     margin-top: 80px;
-    height: 65%;
+    height: 50%;
     width: 111%;
   }
 }
 @media (max-width: 380px) {
   .about-me-page {
     margin-top: 80px;
-    height: 55%;
+    height: 50%;
     width: 114%;
   }
 }
