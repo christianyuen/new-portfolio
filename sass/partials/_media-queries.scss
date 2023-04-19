@@ -1,3 +1,24 @@
+@media (min-height: 800px) {
+    header {
+        padding-top: 110px;
+        padding-bottom: 110px;
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+@media (min-width: 1300px) {
+// Base Styles
+    header {
+        padding-left: 275px;
+        padding-right: 275px;
+    }
+
+    .clock {
+        font-size: 1.1rem;
+    }
+}
+
 @media (max-width: 810px) {
 
     // Room
@@ -322,12 +343,12 @@
 }
 
 @media (max-width: 480px) {
-
+    // Base Styles
     header {
-        width: 100vw;
-        height: 100vh;
-        padding: 3px;
-        background-image: linear-gradient(to bottom left, rgb(0, 255, 0), black, black, black);
+        padding: 0px;
+        padding-bottom: 90px;
+        padding-top: 20px;
+        background-image: none;
     }
 
     .desk {
@@ -615,16 +636,5 @@
         left: 16%;
         width: 275px;
         height: 183px;
-    }
-
-    header {
-        height: 88vh;
-    }
-}
-
-@media (min-height: 800px) {
-    header {
-        margin-top: 90px;
-        height: 80vh;
     }
 }
