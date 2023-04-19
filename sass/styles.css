@@ -1783,6 +1783,9 @@ h1 {
     width: 28%;
     height: 8%;
   }
+  .music-glow {
+    display: flex;
+  }
   .dj {
     top: 83%;
     left: 34%;
@@ -1812,11 +1815,18 @@ h1 {
     left: 87.7%;
     font-size: 2vw;
   }
+  .comp-glow {
+    display: inline;
+    opacity: 1;
+  }
   .computer-monitor {
     top: 24%;
     left: 26%;
     width: 25.8%;
     height: 30%;
+  }
+  .computer-monitor:hover {
+    transform: scale(1);
   }
   .computer-keyboard {
     top: 55%;
@@ -1831,20 +1841,21 @@ h1 {
     height: 28%;
   }
   .black-screen {
-    width: 14.3%;
+    width: 13.3%;
     right: 59.3%;
-    top: 26.5%;
-    height: 19%;
+    top: 27.5%;
+    height: 18%;
   }
   .internet {
-    width: 13.8%;
-    right: 59.5%;
-    top: 27%;
+    width: 11.8%;
+    right: 60.5%;
+    top: 28%;
     height: 15.4%;
+    rotate: 1deg;
   }
   .computer-glow {
-    top: 16.4%;
-    left: 3.7%;
+    top: 15.8%;
+    left: 4.7%;
     width: 50%;
     height: 40%;
   }
@@ -2026,6 +2037,9 @@ h1 {
     width: 39%;
     height: 8%;
   }
+  .keyboard-glow {
+    top: 42%;
+  }
   .right-speaker {
     top: 32%;
     left: 80%;
@@ -2057,8 +2071,8 @@ h1 {
     height: 25%;
   }
   .computer-glow {
-    top: 16.9%;
-    left: -5.5%;
+    top: 16.4%;
+    left: -4.05%;
     width: 50%;
     height: 40%;
   }
@@ -2087,16 +2101,16 @@ h1 {
     height: 3%;
   }
   .black-screen {
-    width: 21.5%;
-    right: 61.5%;
-    top: 30%;
-    height: 15.5%;
+    width: 19%;
+    right: 62%;
+    top: 31%;
+    height: 14%;
   }
   .internet {
-    width: 19.8%;
-    right: 62.5%;
-    top: 30.6%;
-    height: 12.8%;
+    width: 18.3%;
+    right: 63%;
+    top: 31.1%;
+    height: 12.2%;
     rotate: 0.5deg;
   }
   .chair {
@@ -2110,6 +2124,12 @@ h1 {
     left: 44%;
     width: 44%;
     height: 15%;
+  }
+  .dj-glow {
+    top: 81.9%;
+    left: 40.3%;
+    width: 54.2%;
+    height: 19%;
   }
   .mixer-wire {
     top: 63%;
