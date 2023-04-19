@@ -2214,7 +2214,7 @@ h1 {
     width: 275px;
     height: 183px;
   }
-  html {
-    overflow: hidden;
+  header {
+    height: 90vh;
   }
 }/*# sourceMappingURL=styles.css.map */
