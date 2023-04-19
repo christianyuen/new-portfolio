@@ -1073,7 +1073,7 @@ a {
   left: 75.7%;
   transform: translateX(-50%) translateY(-50%);
   color: rgb(0, 255, 0);
-  font-size: 1.7vw;
+  font-size: 1.5vw;
   font-family: "digital";
   letter-spacing: 5px;
   pointer-events: none;
@@ -1690,19 +1690,26 @@ h1 {
 }
 @media (min-height: 800px) {
   header {
-    padding-top: 150px;
-    padding-bottom: 150px;
-    height: 100vh;
+    padding: 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    height: 90vh;
     width: 100vw;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1200px) {
+  header {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .clock {
+    font-size: 1.2vw;
+  }
+}
+@media (min-width: 1600px) {
   header {
     padding-left: 300px;
     padding-right: 300px;
-  }
-  .clock {
-    font-size: 1.1rem;
   }
 }
 @media (max-width: 810px) {
@@ -1803,6 +1810,7 @@ h1 {
   .clock {
     top: 32.75%;
     left: 87.7%;
+    font-size: 2vw;
   }
   .computer-monitor {
     top: 24%;
