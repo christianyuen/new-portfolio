@@ -1690,16 +1690,16 @@ h1 {
 }
 @media (min-height: 800px) {
   header {
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     height: 100vh;
     width: 100vw;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1250px) {
   header {
-    padding-left: 275px;
-    padding-right: 275px;
+    padding-left: 300px;
+    padding-right: 300px;
   }
   .clock {
     font-size: 1.1rem;
