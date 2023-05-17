@@ -41,6 +41,11 @@
     margin-top: 290px;
 }
 
+.title-container {
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width: 480px) {
     .contact-container {
         display: flex;

@@ -1,5 +1,6 @@
 html {
     background-color: black;
+    overflow-x: hidden;
 }
 
 .room-html {
@@ -22,7 +23,8 @@ header {
 .title {
     color: white;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-decoration: underline rgb(211, 0, 0) 5px;
+    // text-decoration:  solid underline rgb(211, 0, 0) 5px;
+    border-bottom: solid rgb(211, 0, 0) 5px;;
     margin-top: 50px;
     text-align: center;
     text-transform: uppercase;
