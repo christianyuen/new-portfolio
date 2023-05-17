@@ -16,19 +16,50 @@
 }
 
 .skills-img {
-    width: 100%;
+    width: 50%;
 }
 
 .skills-names {
-    width: 116%;
-    height: 116%;
+    width: 59%;
+    height: 117%;
     position: absolute;
-    top: -4%;
-    right: -10%;
+    top: -5%;
+    right: 19%;
 }
+
+@media (max-width: 800px) {
+    .skills-section {
+        padding: 0 30px;
+    }
+
+    .skills-img {
+        width: 70%;
+    }
+
+    .skills-names {
+        width: 82%;
+        height: 118%;
+        position: absolute;
+        top: -5%;
+        right: 7%;
+    }
+}
+
 
 @media (max-width: 500px) {
     .skills-section {
         padding: 0 30px;
+    }
+
+    .skills-img {
+        width: 100%;
+    }
+
+    .skills-names {
+        width: 119%;
+        height: 118%;
+        position: absolute;
+        top: -5%;
+        right: -12%;
     }
 }
