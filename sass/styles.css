@@ -223,6 +223,9 @@ html {
 
 html {
   background-color: black;
+}
+
+.room-html {
   overflow: hidden;
 }
 
@@ -1146,10 +1149,6 @@ a {
   border: rgb(0, 255, 0) 1px solid;
 }
 
-html {
-  overflow: scroll;
-}
-
 @media (max-width: 480px) {
   .about-me-section {
     padding: 0 30px;
@@ -1944,7 +1943,7 @@ i.fa-step-backward {
 @media (max-width: 480px) {
   header {
     padding: 0px;
-    padding-bottom: 150px;
+    padding-bottom: 140px;
     background-image: none;
   }
   .title {
