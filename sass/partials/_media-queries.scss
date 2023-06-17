@@ -20,9 +20,7 @@
 
 @media (min-width: 1200px) {
 // Nav
-#toggle1:checked ~ .menu1 {
-    padding-left: 300px;
-    padding-right: 300px;
+#toggle1:checked ~ #home-nav {
     width: calc(100vw - 300px);
 }
 
@@ -40,9 +38,7 @@
 
 @media (min-width: 1600px) {
 // Nav
-#toggle1:checked ~ .menu1 {
-    padding-left: 300px;
-    padding-right: 300px;
+#toggle1:checked ~ #home-nav {
     width: calc(100vw - 600px);
 }
 // #menu1-index {

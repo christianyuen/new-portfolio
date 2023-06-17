@@ -1650,9 +1650,7 @@ i.fa-step-backward {
   }
 }
 @media (min-width: 1200px) {
-  #toggle1:checked ~ .menu1 {
-    padding-left: 300px;
-    padding-right: 300px;
+  #toggle1:checked ~ #home-nav {
     width: calc(100vw - 300px);
   }
   header {
@@ -1664,9 +1662,7 @@ i.fa-step-backward {
   }
 }
 @media (min-width: 1600px) {
-  #toggle1:checked ~ .menu1 {
-    padding-left: 300px;
-    padding-right: 300px;
+  #toggle1:checked ~ #home-nav {
     width: calc(100vw - 600px);
   }
   header {
