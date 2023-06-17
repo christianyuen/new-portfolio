@@ -3,6 +3,7 @@
     width: 100%;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 // ANIMATION
@@ -119,15 +120,13 @@
     transition: all 0.3s ease-in-out;
     &:hover,
     &:hover + .dj-glow,
+    &:active,
+    &:active + .dj-glow,
     &:focus {
         visibility: visible;
         transform: scale(1.1);
         cursor: pointer;
     }
-}
-
-.mixer-hover {
-    // display: none;
 }
 
 .dj-glow {
@@ -428,8 +427,8 @@
 }
 
 .lilypadmag {
-    top: 18%;
-    left: 31%;
+    top: 16%;
+    left: 50%;
     width: 60%;
     height: 100%;
     position: absolute;

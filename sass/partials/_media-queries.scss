@@ -1,22 +1,22 @@
-@media (min-height: 850px) {
-    header {
-        padding: 0;
-        padding-top: 100px;
-        padding-bottom: 100px;
-        height: 100vh;
-        width: 100vw;
-    }
-}
+// @media (min-height: 850px) {
+//     header {
+//         padding: 0;
+//         padding-top: 100px;
+//         padding-bottom: 100px;
+//         height: 100vh;
+//         width: 100vw;
+//     }
+// }
 
-@media (min-height: 1000px) {
-    header {
-        padding: 0;
-        padding-top: 200px;
-        padding-bottom: 200px;
-        height: 100vh;
-        width: 100vw;
-    }
-}
+// @media (min-height: 1000px) {
+//     header {
+//         padding: 0;
+//         padding-top: 200px;
+//         padding-bottom: 200px;
+//         height: 100vh;
+//         width: 100vw;
+//     }
+// }
 
 @media (min-width: 1200px) {
 // Nav
@@ -25,9 +25,8 @@
 }
 
 // Base Styles
-    header {
-        padding-left: 150px;
-        padding-right: 150px;
+    body {
+        padding: 0 150px;
     }
     
     .clock {
@@ -37,22 +36,18 @@
 
 
 @media (min-width: 1600px) {
-// Nav
-#toggle1:checked ~ #home-nav {
-    width: calc(100vw - 600px);
-}
-// #menu1-index {
-//     width: calc(100vw - 600px);
-// }
-
-// Base Styles
-    header {
-        padding-left: 300px;
-        padding-right: 300px;
+    // Nav
+    #toggle1:checked ~ #home-nav {
+        width: calc(100vw - 600px);
     }
+    // base styles
+    body {
+        padding: 0px 200px;
+    }
+
 }
 
-@media (max-width: 810px) {
+@media (max-width: 1000px) {
 
     // Room
     .dresser {
@@ -390,12 +385,12 @@
     }
 }
 
-@media (max-width: 480px) {
-    header {
-        padding: 0px;
-        padding-bottom: 140px;
-        background-image: none;
-    }
+@media (max-width: 700px) {
+    // header {
+    //     padding: 0px;
+    //     padding-bottom: 120px;
+    //     background-image: none;
+    // }
 
     .title {
         font-size: 1.6rem;

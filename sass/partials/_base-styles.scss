@@ -1,18 +1,8 @@
-html {
+body {
     background-color: black;
-    overflow-x: hidden;
-}
-
-.room-html {
-    overflow: hidden;
-}
-
-header {
-    overflow: hidden;
     width: 100vw;
     height: 100vh;
-    padding: 20px;
-    background-image: linear-gradient(to bottom left, rgb(0, 255, 0), black, black, black);
+    overflow: hidden;
 }
 
 @font-face {

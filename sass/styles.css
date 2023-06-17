@@ -221,21 +221,11 @@ html {
   overflow: hidden;
 }
 
-html {
+body {
   background-color: black;
-  overflow-x: hidden;
-}
-
-.room-html {
-  overflow: hidden;
-}
-
-header {
-  overflow: hidden;
   width: 100vw;
   height: 100vh;
-  padding: 20px;
-  background-image: linear-gradient(to bottom left, rgb(0, 255, 0), black, black, black);
+  overflow: hidden;
 }
 
 @font-face {
@@ -356,6 +346,7 @@ a {
   width: 100%;
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .ashtray-animation {
@@ -463,7 +454,7 @@ a {
   z-index: 9;
   transition: all 0.3s ease-in-out;
 }
-.dj:hover, .dj:hover + .dj-glow, .dj:focus {
+.dj:hover, .dj:hover + .dj-glow, .dj:active, .dj:active + .dj-glow, .dj:focus {
   visibility: visible;
   transform: scale(1.1);
   cursor: pointer;
@@ -744,8 +735,8 @@ a {
 }
 
 .lilypadmag {
-  top: 18%;
-  left: 31%;
+  top: 16%;
+  left: 50%;
   width: 60%;
   height: 100%;
   position: absolute;
@@ -1631,31 +1622,12 @@ i.fa-step-backward {
     width: 70%;
   }
 }
-@media (min-height: 850px) {
-  header {
-    padding: 0;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    height: 100vh;
-    width: 100vw;
-  }
-}
-@media (min-height: 1000px) {
-  header {
-    padding: 0;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    height: 100vh;
-    width: 100vw;
-  }
-}
 @media (min-width: 1200px) {
   #toggle1:checked ~ #home-nav {
     width: calc(100vw - 300px);
   }
-  header {
-    padding-left: 150px;
-    padding-right: 150px;
+  body {
+    padding: 0 150px;
   }
   .clock {
     font-size: 1.2vw;
@@ -1665,12 +1637,11 @@ i.fa-step-backward {
   #toggle1:checked ~ #home-nav {
     width: calc(100vw - 600px);
   }
-  header {
-    padding-left: 300px;
-    padding-right: 300px;
+  body {
+    padding: 0px 200px;
   }
 }
-@media (max-width: 810px) {
+@media (max-width: 1000px) {
   .dresser {
     display: none;
   }
@@ -1955,12 +1926,7 @@ i.fa-step-backward {
     height: 36.3%;
   }
 }
-@media (max-width: 480px) {
-  header {
-    padding: 0px;
-    padding-bottom: 140px;
-    background-image: none;
-  }
+@media (max-width: 700px) {
   .title {
     font-size: 1.6rem;
   }
