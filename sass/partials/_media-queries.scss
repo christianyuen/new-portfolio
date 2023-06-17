@@ -1,26 +1,6 @@
-// @media (min-height: 850px) {
-//     header {
-//         padding: 0;
-//         padding-top: 100px;
-//         padding-bottom: 100px;
-//         height: 100vh;
-//         width: 100vw;
-//     }
-// }
-
-// @media (min-height: 1000px) {
-//     header {
-//         padding: 0;
-//         padding-top: 200px;
-//         padding-bottom: 200px;
-//         height: 100vh;
-//         width: 100vw;
-//     }
-// }
-
 @media (min-width: 1200px) {
 // Nav
-#toggle1:checked ~ #home-nav {
+#toggle1:checked ~ .menu1 {
     width: calc(100vw - 300px);
 }
 
@@ -37,8 +17,8 @@
 
 @media (min-width: 1600px) {
     // Nav
-    #toggle1:checked ~ #home-nav {
-        width: calc(100vw - 600px);
+    #toggle1:checked ~ .menu1 {
+        width: calc(100vw - 400px);
     }
     // base styles
     body {
@@ -386,9 +366,6 @@
 }
 
 @media (max-width: 650px) {
-    body {
-        padding: 30px 0px;
-    }
 
     .title {
         font-size: 1.6rem;

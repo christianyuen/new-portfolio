@@ -1612,7 +1612,7 @@ i.fa-step-backward {
   }
 }
 @media (min-width: 1200px) {
-  #toggle1:checked ~ #home-nav {
+  #toggle1:checked ~ .menu1 {
     width: calc(100vw - 300px);
   }
   body {
@@ -1623,8 +1623,8 @@ i.fa-step-backward {
   }
 }
 @media (min-width: 1600px) {
-  #toggle1:checked ~ #home-nav {
-    width: calc(100vw - 600px);
+  #toggle1:checked ~ .menu1 {
+    width: calc(100vw - 400px);
   }
   body {
     padding: 0px 200px;
@@ -1916,9 +1916,6 @@ i.fa-step-backward {
   }
 }
 @media (max-width: 650px) {
-  body {
-    padding: 30px 0px;
-  }
   .title {
     font-size: 1.6rem;
   }
