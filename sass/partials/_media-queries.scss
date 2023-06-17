@@ -695,12 +695,18 @@
 }
 
 @media (max-width: 480px) {
-    body {
-        padding: 0;
-    }
-
-    .room {
+    html {
         height: 100vh;
         width: 100vw;
     }
+    body {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    // .room {
+    //     height: 100vh;
+    //     width: 100vw;
+    // }
 }
