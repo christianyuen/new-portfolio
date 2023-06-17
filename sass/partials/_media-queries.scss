@@ -20,7 +20,9 @@
 
 @media (min-width: 1200px) {
 // Nav
-#menu1-index {
+#toggle1:checked ~ .menu1 {
+    padding-left: 300px;
+    padding-right: 300px;
     width: calc(100vw - 300px);
 }
 
@@ -38,9 +40,14 @@
 
 @media (min-width: 1600px) {
 // Nav
-#menu1-index {
+#toggle1:checked ~ .menu1 {
+    padding-left: 300px;
+    padding-right: 300px;
     width: calc(100vw - 600px);
 }
+// #menu1-index {
+//     width: calc(100vw - 600px);
+// }
 
 // Base Styles
     header {
