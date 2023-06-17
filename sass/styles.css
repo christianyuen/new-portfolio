@@ -1562,7 +1562,7 @@ i.fa-step-backward {
   width: 250px;
   transition: all ease-in-out 0.3s;
 }
-.send-email:hover, .send-email:hover + .contact-hover {
+.send-email:hover, .send-email:hover + .contact-hover, .send-email:active, .send-email:active + .contact-hover {
   transform: scale(1.1);
   visibility: visible;
 }
@@ -2179,22 +2179,5 @@ i.fa-step-backward {
   body {
     padding: 0;
     height: 100dvh;
-  }
-}
-@media (orientation: landscape) {
-  body {
-    padding-left: 15%;
-    padding-right: 15%;
-  }
-  .clock-image {
-    top: 27.8%;
-    left: 81%;
-    width: 12%;
-    height: 7%;
-  }
-  .clock {
-    top: 32.1%;
-    left: 87.9%;
-    font-size: 1.7vw;
   }
 }/*# sourceMappingURL=styles.css.map */
