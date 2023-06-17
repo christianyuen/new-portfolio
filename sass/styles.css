@@ -2179,6 +2179,10 @@ i.fa-step-backward {
 }
 @media (max-width: 480px) {
   body {
-    padding: 40px 0;
+    padding: 0;
+  }
+  .room {
+    height: 100vh;
+    width: 100vw;
   }
 }/*# sourceMappingURL=styles.css.map */
