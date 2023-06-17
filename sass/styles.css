@@ -225,6 +225,7 @@ body {
   background-color: black;
   width: 100vw;
   height: 100vh;
+  height: 100dvh;
   overflow: hidden;
 }
 
@@ -2178,13 +2179,8 @@ i.fa-step-backward {
   }
 }
 @media (max-width: 480px) {
-  html {
-    height: 100vh;
-    width: 100vw;
-  }
   body {
     padding: 0;
-    width: 100%;
-    height: 100%;
+    height: 100dvh;
   }
 }/*# sourceMappingURL=styles.css.map */
