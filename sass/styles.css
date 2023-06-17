@@ -425,7 +425,7 @@ a {
   height: 19%;
   position: absolute;
   z-index: 5;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 .stereo:hover, .stereo:hover + .stereo-glow, .stereo:focus {
   transform: scale(1.05);
@@ -452,7 +452,7 @@ a {
   height: 16%;
   position: absolute;
   z-index: 9;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 .dj:hover, .dj:hover + .dj-glow, .dj:active, .dj:active + .dj-glow, .dj:focus {
   visibility: visible;
@@ -468,7 +468,7 @@ a {
   height: 19%;
   z-index: 11;
   position: absolute;
-  transition: all 0s ease-in-out;
+  transition: all 0.1s ease-in-out;
   pointer-events: none;
 }
 
@@ -479,18 +479,6 @@ a {
   height: 25%;
   position: absolute;
   z-index: 3;
-}
-
-.mixer-neon {
-  visibility: hidden;
-  top: 81.9%;
-  left: 29.3%;
-  width: 100%;
-  height: 19%;
-  z-index: 8;
-  position: absolute;
-  transition: all 0.3s ease-in-out;
-  pointer-events: none;
 }
 
 .soundcloud {
@@ -529,14 +517,14 @@ a {
   height: 16.6%;
   position: absolute;
   z-index: 5;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
-.about-me:hover, .about-me:focus {
+.about-me:hover, .about-me:focus, .about-me:active {
   transform: scale(1.1);
   cursor: pointer;
 }
 
-.about-me-anchor:hover + .about-neon {
+.about-me-anchor:hover + .about-neon, .about-me-anchor:active + .about-neon {
   visibility: visible;
 }
 
@@ -559,9 +547,9 @@ a {
   height: 6%;
   position: absolute;
   z-index: 5;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
-.info:hover, .info:hover + .info-neon, .info:hover + .info-hover, .info:focus {
+.info:hover, .info:hover + .info-neon, .info:hover + .info-hover, .info:active, .info:active + .info-neon, .info:active + .info-hover, .info:focus {
   transform: scale(1.2);
   cursor: pointer;
   visibility: visible;
@@ -575,7 +563,7 @@ a {
   position: absolute;
   z-index: 4;
   pointer-events: none;
-  transition: all 0.1s ease-in-out;
+  transition: all 0s ease-in-out;
   opacity: 0.8;
   visibility: hidden;
 }
@@ -614,14 +602,14 @@ a {
   height: 11%;
   position: absolute;
   z-index: 5;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
-.contact:hover, .contact:focus {
+.contact:hover, .contact:focus, .contact:active {
   transform: scale(1.1);
   cursor: pointer;
 }
 
-.contact-anchor:hover + .contact-neon {
+.contact-anchor:hover + .contact-neon, .contact-anchor:active, .contact-anchor:active + .contact-neon {
   visibility: visible;
 }
 
@@ -633,7 +621,7 @@ a {
   position: absolute;
   z-index: 4;
   pointer-events: none;
-  transition: all 0.1s ease-in-out;
+  transition: all 0s ease-in-out;
   visibility: hidden;
 }
 
@@ -653,9 +641,9 @@ a {
   height: 7%;
   position: absolute;
   z-index: 4;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
-.switch:hover, .switch:hover + .lamp-neon, .switch:focus {
+.switch:hover, .switch:hover + .lamp-neon, .switch:focus, .switch:active, .switch:active + .lamp-neon {
   transform: scale(1.2);
   cursor: pointer;
   visibility: visible;
@@ -669,7 +657,7 @@ a {
   position: absolute;
   z-index: 3;
   pointer-events: none;
-  transition: all 0.1s ease-in-out;
+  transition: all 0s ease-in-out;
   visibility: hidden;
 }
 
@@ -780,7 +768,7 @@ a {
   z-index: 3;
 }
 
-.skills-anchor:hover + .tech-stack-neon {
+.skills-anchor:hover + .tech-stack-neon, .skills-anchor:active + .tech-stack-neon {
   visibility: visible;
 }
 
@@ -791,9 +779,9 @@ a {
   height: 17%;
   position: absolute;
   z-index: 6;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
-.tech-stack:hover, .tech-stack:focus {
+.tech-stack:hover, .tech-stack:focus, .tech-stack:active {
   transform: scale(1.1);
   cursor: pointer;
 }
@@ -806,7 +794,7 @@ a {
   position: absolute;
   z-index: 5;
   pointer-events: none;
-  transition: all 0.1s ease-in-out;
+  transition: all 0s ease-in-out;
   visibility: hidden;
 }
 
@@ -823,7 +811,7 @@ a {
   z-index: 6;
   transition: all 0.3s ease-in-out;
 }
-.keyboard:hover, .keyboard:focus {
+.keyboard:hover, .keyboard:focus, .keyboard:active {
   transform: scale(1.1);
   cursor: pointer;
 }
@@ -857,7 +845,7 @@ a {
   height: 16%;
   position: absolute;
   z-index: 5;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .speaker-glow {
@@ -887,7 +875,7 @@ a {
   position: absolute;
   z-index: 7;
   pointer-events: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .keyboard-neon {
@@ -898,7 +886,7 @@ a {
   position: absolute;
   z-index: 7;
   pointer-events: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .phone {
@@ -938,7 +926,7 @@ a {
   z-index: 7;
   right: 56%;
   top: 31.5%;
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.1s;
   pointer-events: none;
   height: 16%;
 }
@@ -951,7 +939,7 @@ a {
   top: 32.5%;
   rotate: 2deg;
   opacity: 0.9;
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.1s;
   pointer-events: none;
   height: 12%;
 }
@@ -1926,7 +1914,10 @@ i.fa-step-backward {
     height: 36.3%;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 650px) {
+  body {
+    padding: 30px 0px;
+  }
   .title {
     font-size: 1.6rem;
   }
@@ -2184,5 +2175,10 @@ i.fa-step-backward {
     left: 16%;
     width: 275px;
     height: 183px;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    padding: 40px 0;
   }
 }/*# sourceMappingURL=styles.css.map */
