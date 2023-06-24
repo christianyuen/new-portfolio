@@ -522,6 +522,7 @@ a {
   position: absolute;
   z-index: 5;
   transition: all 0.1s ease-in-out;
+  display: none;
 }
 .about-me:hover, .about-me:focus, .about-me:active {
   transform: scale(1.1);
@@ -600,8 +601,8 @@ a {
 }
 
 .contact {
-  top: 12%;
-  left: 57%;
+  top: 14%;
+  left: 41%;
   width: 8%;
   height: 11%;
   position: absolute;
@@ -618,8 +619,8 @@ a {
 }
 
 .contact-neon {
-  top: 6.9%;
-  left: 54%;
+  top: 8.9%;
+  left: 38%;
   width: 14.7%;
   height: 19%;
   position: absolute;
@@ -2104,10 +2105,10 @@ i.fa-step-backward {
     z-index: 3;
   }
   .contact-neon {
-    top: 2.9%;
-    left: 50%;
-    width: 33.7%;
-    height: 19%;
+    top: 1.2%;
+    left: 44%;
+    width: 44.7%;
+    height: 22%;
   }
   .contact {
     top: 7%;
@@ -2159,16 +2160,16 @@ i.fa-step-backward {
     height: 15.8%;
   }
   .info {
-    top: 23%;
-    left: 46%;
+    top: 14%;
+    left: 27%;
     width: 14%;
     height: 8%;
     z-index: 6;
   }
   .info-neon {
-    top: 19.1%;
-    left: 40.7%;
-    width: 22.1%;
+    top: 10.1%;
+    left: 20.7%;
+    width: 26.1%;
     height: 16.2%;
   }
   .info-hover {

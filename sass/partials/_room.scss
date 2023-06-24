@@ -203,6 +203,7 @@
     position: absolute;
     z-index: 5;
     transition: all 0.1s ease-in-out;
+    display: none;
     &:hover,
     &:focus,
     &:active {
@@ -296,8 +297,8 @@
 
 // CONTACT
 .contact {
-    top: 12%;
-    left: 57%;
+    top: 14%;
+    left: 41%;
     width: 8%;
     height: 11%;
     position: absolute;
@@ -320,8 +321,8 @@
 }
 
 .contact-neon {
-    top: 6.9%;
-    left: 54%;
+    top: 8.9%;
+    left: 38%;
     width: 14.7%;
     height: 19%;
     position: absolute;
