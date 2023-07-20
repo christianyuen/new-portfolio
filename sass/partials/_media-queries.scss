@@ -1,6 +1,6 @@
 @media (min-width: 1200px) {
 // Nav
-#toggle1:checked ~ .menu1 {
+#toggle1:checked ~ #home-nav {
     width: calc(100vw - 300px);
 }
 
@@ -17,7 +17,7 @@
 
 @media (min-width: 1600px) {
     // Nav
-    #toggle1:checked ~ .menu1 {
+    #toggle1:checked ~ #home-nav {
         width: calc(100vw - 400px);
     }
     // base styles
