@@ -1619,7 +1619,7 @@ i.fa-step-backward {
   #toggle1:checked ~ .menu1 {
     width: calc(100vw - 300px);
   }
-  body {
+  .home-body {
     padding: 0 150px;
   }
   .clock {
@@ -1630,7 +1630,7 @@ i.fa-step-backward {
   #toggle1:checked ~ .menu1 {
     width: calc(100vw - 400px);
   }
-  body {
+  .home-body {
     padding: 0px 200px;
   }
 }
