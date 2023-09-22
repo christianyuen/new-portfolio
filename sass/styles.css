@@ -244,6 +244,7 @@ body {
   font-size: 2.5rem;
   text-transform: uppercase;
   animation: title 1s ease-in-out infinite alternate;
+  padding-top: 10px;
 }
 
 @keyframes title {
@@ -1312,10 +1313,7 @@ a {
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
-.project-hover:hover {
-  opacity: 0.7;
-}
-.project-hover:active {
+.project-hover:hover, .project-hover:focus, .project-hover:active {
   opacity: 0.7;
 }
 
@@ -1343,7 +1341,7 @@ a {
   transition: all 0.3s ease-in-out;
   color: red;
 }
-.enter:hover + .iconDescription, .enter:active + .iconDescription, .enter:focus + .iconDescription {
+.enter:hover + .iconDescription, .enter:active + .iconDescription {
   opacity: 1;
 }
 
@@ -1358,22 +1356,6 @@ a {
   margin-top: 0;
 }
 
-.projects-home {
-  z-index: 3;
-  position: absolute;
-  height: auto;
-  filter: invert(100);
-  top: 30px;
-  right: 152px;
-  width: 49px;
-  padding-bottom: 5px;
-  transition: all ease-in-out 0.1s;
-}
-.projects-home:hover {
-  cursor: pointer;
-  border-bottom: rgb(0, 213, 255) 3px solid;
-}
-
 @media (max-width: 1000px) {
   .projects .project {
     width: 80%;
@@ -1382,7 +1364,7 @@ a {
 @media (max-width: 800px) {
   .projects .project {
     width: 90%;
-    margin-top: 30px;
+    margin-top: 40px;
   }
   .projects .project:first-of-type {
     margin-top: 0;
