@@ -40,9 +40,7 @@
     background-color: black;
     opacity: 0;
     transition: all 0.3s ease-in-out;
-    &:hover,
-    &:focus,
-    &:active {
+    &:hover {
         opacity: 0.7;
     }
 }
@@ -69,7 +67,7 @@
 
 .enter {
     color: white;
-    font-size: 9rem;
+    font-size: 8rem;
     transition: all 0.3s ease-in-out;
     color: red;
 

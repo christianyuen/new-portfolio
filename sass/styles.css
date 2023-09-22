@@ -1313,7 +1313,7 @@ a {
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
-.project-hover:hover, .project-hover:focus, .project-hover:active {
+.project-hover:hover {
   opacity: 0.7;
 }
 
@@ -1337,7 +1337,7 @@ a {
 
 .enter {
   color: white;
-  font-size: 9rem;
+  font-size: 8rem;
   transition: all 0.3s ease-in-out;
   color: red;
 }
