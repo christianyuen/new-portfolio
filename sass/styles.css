@@ -238,7 +238,8 @@ body {
 }
 .title {
   color: #fff;
-  font-family: "Italianno", cursive;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 3px;
   text-align: center;
   font-size: 2.5rem;
   text-transform: uppercase;
@@ -247,7 +248,7 @@ body {
 
 @keyframes title {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #29be00, 0 0 40px #29be00, 0 0 50px #29be00, 0 0 60px #29be00, 0 0 70px #29be00;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #209500, 0 0 40px #209500, 0 0 50px #209500, 0 0 60px #209500, 0 0 70px #209500;
   }
   to {
     text-shadow: 0 0 20px #fff, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00;
@@ -344,7 +345,7 @@ a {
   width: 100%;
   margin: 0;
   padding: 10px 0;
-  font: 300 30px "Italianno", cursive;
+  font: 300 30px "Luckiest Guy", cursive;
   text-transform: uppercase;
 }
 .link1:hover {
@@ -1351,8 +1352,8 @@ a {
 .iconDescription {
   color: white;
   opacity: 0;
-  font-size: 0.8rem;
-  font-family: "Italianno", cursive;
+  font-size: 1rem;
+  font-family: "Luckiest Guy", cursive;
   margin: -10px;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
@@ -1632,7 +1633,7 @@ i.fa-step-backward {
 
 .send-email {
   color: red;
-  font-family: cursive;
+  font-family: "Luckiest Guy", cursive;
   font-size: 1rem;
   padding: 0;
   margin: 0;
