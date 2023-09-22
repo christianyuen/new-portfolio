@@ -346,6 +346,8 @@ a {
   padding: 10px 0;
   font: 300 30px "Italianno", cursive;
   text-transform: uppercase;
+}
+.link1:hover {
   animation: title 1s ease-in-out infinite alternate;
 }
 
@@ -602,6 +604,7 @@ a {
   width: 275px;
   height: 197px;
   font-family: "Courier New", Courier, monospace;
+  box-shadow: 0px 0px 50px rgb(0, 255, 17);
 }
 .info-hover p {
   color: white;
@@ -1600,10 +1603,15 @@ i.fa-step-backward {
   text-align: center;
 }
 
+.contact-container h1 {
+  margin-bottom: 60px;
+}
+
 .contact-container a {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   transition: all ease-in-out 0.3s;
+  margin-top: 100px;
 }
 .contact-container a:hover, .contact-container a:active, .contact-container a:focus {
   color: rgb(6, 255, 6);

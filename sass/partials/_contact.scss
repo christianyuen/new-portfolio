@@ -5,10 +5,15 @@
     text-align: center;
 }
 
+.contact-container h1 {
+    margin-bottom: 60px;
+}
+
 .contact-container a { 
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     transition: all ease-in-out 0.3s;
+    margin-top: 100px;
     &:hover,
     &:active,
     &:focus {

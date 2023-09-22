@@ -96,9 +96,11 @@ a {
     padding: 10px 0;
     font: 300 30px 'Italianno', cursive;
     text-transform: uppercase;
-    -webkit-animation: title 1s ease-in-out infinite alternate;
-    -moz-animation: title 1s ease-in-out infinite alternate;
-    animation: title 1s ease-in-out infinite alternate;
+    &:hover {
+        -webkit-animation: title 1s ease-in-out infinite alternate;
+        -moz-animation: title 1s ease-in-out infinite alternate;
+        animation: title 1s ease-in-out infinite alternate;
+    }
 }
 
 .link1:hover,
