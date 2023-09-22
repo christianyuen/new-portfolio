@@ -8,6 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
     .project {
         margin-top: 50px;
         display: flex;
@@ -21,6 +22,10 @@
             margin-top: 10px;
         }
     }
+}
+
+.projects .title {
+    font-size: 2.5rem;
 }
 
 .project-img {
@@ -42,6 +47,9 @@
     &:hover {
         opacity: 0.7;
     }
+    &:active {
+        opacity: 0.7;
+    }
 }
 
 .project-hover-container {
@@ -52,6 +60,10 @@
     justify-content: space-evenly;
     align-items: center;
     border: 1px solid rgb(38, 255, 0);
+    box-shadow: rgb(38, 255, 0) 0px 0px 50px;
+    -webkit-animation: title 1s ease-in-out infinite alternate;
+    -moz-animation: title 1s ease-in-out infinite alternate;
+    animation: title 1s ease-in-out infinite alternate;
 }
 
 .iconContainer {
@@ -64,10 +76,7 @@
     color: white;
     font-size: 6rem;
     transition: all 0.3s ease-in-out;
-    &:hover,
-    &:focus {
-        color: red;
-    }
+    color: red;
     &:hover + .iconDescription {
         opacity: 1;
     }
@@ -77,10 +86,11 @@
     color: white;
     opacity: 0;
     font-size: 0.8rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Italianno', cursive;
     margin: -10px;
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
+    margin-top: 0;
 }
 
 .projects-home {
@@ -96,5 +106,22 @@
     &:hover {
         cursor: pointer;
         border-bottom: rgb(0, 213, 255) 3px solid;
+    }
+}
+
+@media (max-width: 1000px) {
+    .projects .project {
+        width: 80%;
+    }
+}
+
+@media (max-width: 800px) {
+    .projects .project {
+        width: 90%;
+        margin-top: 30px;
+    }
+    
+    .projects .project:first-of-type {
+        margin-top: 0;
     }
 }

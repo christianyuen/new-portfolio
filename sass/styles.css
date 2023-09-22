@@ -237,14 +237,22 @@ body {
   src: url(../fonts/digital-7.ttf);
 }
 .title {
-  color: white;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  border-bottom: solid rgb(211, 0, 0) 5px;
-  margin-top: 50px;
+  color: #fff;
+  font-family: "Italianno", cursive;
   text-align: center;
+  font-size: 2.5rem;
   text-transform: uppercase;
+  animation: title 1s ease-in-out infinite alternate;
 }
 
+@keyframes title {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #29be00, 0 0 40px #29be00, 0 0 50px #29be00, 0 0 60px #29be00, 0 0 70px #29be00;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00;
+  }
+}
 a {
   color: #fff;
   text-decoration: none;
@@ -276,7 +284,7 @@ a {
 }
 
 .hamburger1 div {
-  background-color: rgb(61, 61, 61);
+  background-color: black;
   position: relative;
   width: 40px;
   height: 5px;
@@ -321,7 +329,7 @@ a {
   z-index: 20;
   transition: all 0.3s ease;
   flex-direction: column;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .menu1 a:first-child {
@@ -336,16 +344,24 @@ a {
   width: 100%;
   margin: 0;
   padding: 10px 0;
-  font: 300 20px "Courier", sans-serif;
+  font: 300 30px "Italianno", cursive;
   text-transform: uppercase;
+  animation: title 1s ease-in-out infinite alternate;
 }
 
-.link1:hover {
+.link1:hover,
+.link1:focus,
+.link1:active {
   background-color: black;
-  color: rgb(34, 255, 0);
+  color: red;
   transition: all 0.3s ease;
 }
 
+@media (max-width: 400px) {
+  .link1 {
+    font: 300 27px "Italianno", cursive;
+  }
+}
 .room {
   width: 100%;
   height: 100%;
@@ -494,6 +510,7 @@ a {
   width: 28%;
   height: 30%;
   border: 1px rgb(47, 255, 0) solid;
+  box-shadow: rgb(17, 255, 0) 0px 0px 50px;
 }
 .soundcloud:hover {
   border: 2px white solid;
@@ -1077,6 +1094,7 @@ a {
   font-family: "digital";
   letter-spacing: 5px;
   pointer-events: none;
+  animation: title 1s ease-in-out infinite alternate;
 }
 
 .clock-image {
@@ -1188,7 +1206,6 @@ a {
   justify-content: center;
   align-items: center;
   padding: 0px 259px;
-  background-image: linear-gradient(to bottom left, rgb(0, 255, 0), black, black);
 }
 
 .skills-container {
@@ -1256,6 +1273,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
 }
 .projects .project {
   margin-top: 50px;
@@ -1269,6 +1287,10 @@ a {
 }
 .projects .project:first-of-type {
   margin-top: 10px;
+}
+
+.projects .title {
+  font-size: 2.5rem;
 }
 
 .project-img {
@@ -1291,6 +1313,9 @@ a {
 .project-hover:hover {
   opacity: 0.7;
 }
+.project-hover:active {
+  opacity: 0.7;
+}
 
 .project-hover-container {
   width: 100%;
@@ -1300,6 +1325,8 @@ a {
   justify-content: space-evenly;
   align-items: center;
   border: 1px solid rgb(38, 255, 0);
+  box-shadow: rgb(38, 255, 0) 0px 0px 50px;
+  animation: title 1s ease-in-out infinite alternate;
 }
 
 .iconContainer {
@@ -1312,8 +1339,6 @@ a {
   color: white;
   font-size: 6rem;
   transition: all 0.3s ease-in-out;
-}
-.enter:hover, .enter:focus {
   color: red;
 }
 .enter:hover + .iconDescription {
@@ -1324,10 +1349,11 @@ a {
   color: white;
   opacity: 0;
   font-size: 0.8rem;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Italianno", cursive;
   margin: -10px;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
+  margin-top: 0;
 }
 
 .projects-home {
@@ -1346,6 +1372,20 @@ a {
   border-bottom: rgb(0, 213, 255) 3px solid;
 }
 
+@media (max-width: 1000px) {
+  .projects .project {
+    width: 80%;
+  }
+}
+@media (max-width: 800px) {
+  .projects .project {
+    width: 90%;
+    margin-top: 30px;
+  }
+  .projects .project:first-of-type {
+    margin-top: 0;
+  }
+}
 .music-player-full-page {
   background-image: black;
   width: 100vw;
@@ -1381,6 +1421,7 @@ align items in a vertical direction */
   justify-content: center;
   font-family: "Courier New", Courier, monospace;
   color: white;
+  box-shadow: 0px 0px 50px rgb(0, 255, 0);
 }
 
 .details {
@@ -1553,68 +1594,26 @@ i.fa-step-backward {
   }
 }
 .contact-container {
-  display: flex;
-  justify-content: center;
+  padding-top: 20px;
   width: 100%;
-  height: 100%;
-  padding: 60px 100px;
-  position: relative;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.send-email {
-  filter: invert(100);
-  width: 250px;
+.contact-container a {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
   transition: all ease-in-out 0.3s;
 }
-.send-email:hover, .send-email:hover + .contact-hover, .send-email:active, .send-email:active + .contact-hover {
-  transform: scale(1.1);
-  visibility: visible;
+.contact-container a:hover, .contact-container a:active, .contact-container a:focus {
+  color: rgb(6, 255, 6);
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: column;
+.contact-container p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.contact-hover {
-  visibility: hidden;
-  pointer-events: none;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.contact-hover-text {
-  color: rgb(21, 255, 0);
-  font-family: "Courier New", Courier, monospace;
-  text-transform: uppercase;
-  margin-top: 290px;
-}
-
-.title-container {
-  display: flex;
-  justify-content: center;
-}
-
-@media (max-width: 480px) {
-  .contact-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    padding: 60px 0px;
-    position: relative;
-  }
-}
-@media (max-width: 810px) {
-  .projects .project {
-    width: 70%;
-  }
-}
 @media (min-width: 1200px) {
   #toggle1:checked ~ #home-nav {
     width: calc(100vw - 300px);
@@ -1920,9 +1919,6 @@ i.fa-step-backward {
   }
 }
 @media (max-width: 650px) {
-  .title {
-    font-size: 1.6rem;
-  }
   .desk {
     top: 48%;
     left: -11%;

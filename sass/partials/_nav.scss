@@ -29,7 +29,7 @@ a {
 }
 
 .hamburger1 div {
-    background-color: rgb(61, 61, 61);
+    background-color: black;
     position: relative;
     width: 40px;
     height: 5px;
@@ -79,7 +79,7 @@ a {
     z-index: 20;
     transition: all 0.3s ease;
     flex-direction: column;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .menu1 a:first-child {
@@ -94,13 +94,24 @@ a {
     width: 100%;
     margin: 0;
     padding: 10px 0;
-    font: 300 20px 'Courier', sans-serif;
+    font: 300 30px 'Italianno', cursive;
     text-transform: uppercase;
+    -webkit-animation: title 1s ease-in-out infinite alternate;
+    -moz-animation: title 1s ease-in-out infinite alternate;
+    animation: title 1s ease-in-out infinite alternate;
 }
 
-.link1:hover {
+.link1:hover,
+.link1:focus,
+.link1:active {
     background-color: black;
-    color: rgb(34, 255, 0);
+    color: red;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+}
+
+@media (max-width: 400px) {
+    .link1 {
+        font: 300 27px 'Italianno', cursive;
+    }
 }

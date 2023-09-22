@@ -15,12 +15,24 @@ body {
 }
 
 .title {
-    color: white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border-bottom: solid rgb(211, 0, 0) 5px;;
-    margin-top: 50px;
+    color: #fff;
+    font-family: 'Italianno', cursive;
+    // text-decoration: underline 1px red;
     text-align: center;
+    font-size: 2.5rem;
     text-transform: uppercase;
+    -webkit-animation: title 1s ease-in-out infinite alternate;
+    -moz-animation: title 1s ease-in-out infinite alternate;
+    animation: title 1s ease-in-out infinite alternate;
+}
+
+@keyframes title {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #29be00, 0 0 40px #29be00, 0 0 50px #29be00, 0 0 60px #29be00, 0 0 70px #29be00;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00;
+    }
 }
 
 

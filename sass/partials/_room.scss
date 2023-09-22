@@ -171,6 +171,7 @@
     width: 28%;
     height: 30%;
     border: 1px rgb(47, 255, 0) solid;
+    box-shadow: rgb(17, 255, 0) 0px 0px 50px;
     &:hover {
         border: 2px white solid; 
     }
@@ -813,6 +814,9 @@
     font-family: "digital";
     letter-spacing: 5px;
     pointer-events: none;
+    -webkit-animation: title 1s ease-in-out infinite alternate;
+    -moz-animation: title 1s ease-in-out infinite alternate;
+    animation: title 1s ease-in-out infinite alternate;
 }
 
 .clock-image {
