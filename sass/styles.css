@@ -1337,7 +1337,7 @@ a {
 
 .enter {
   color: white;
-  font-size: 6rem;
+  font-size: 9rem;
   transition: all 0.3s ease-in-out;
   color: red;
 }
