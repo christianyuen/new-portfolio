@@ -13,7 +13,6 @@
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     transition: all ease-in-out 0.3s;
-    margin-top: 100px;
     &:hover,
     &:active,
     &:focus {
@@ -24,6 +23,25 @@
 .contact-container p {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+a img {
+    filter: invert(1);
+    width: 200px;
+    transition: all ease-in-out 0.3s;
+    &:hover,
+    &:focus,
+    &:active {
+        transform: scale(1.07);
+    }
+}
+
+.contact-container h2 {
+    color: white;
+    font-family: cursive;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
 }
 
 

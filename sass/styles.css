@@ -1208,7 +1208,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px 259px;
+  padding: 0px 400px;
 }
 
 .skills-container {
@@ -1611,7 +1611,6 @@ i.fa-step-backward {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   transition: all ease-in-out 0.3s;
-  margin-top: 100px;
 }
 .contact-container a:hover, .contact-container a:active, .contact-container a:focus {
   color: rgb(6, 255, 6);
@@ -1620,6 +1619,23 @@ i.fa-step-backward {
 .contact-container p {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+a img {
+  filter: invert(1);
+  width: 200px;
+  transition: all ease-in-out 0.3s;
+}
+a img:hover, a img:focus, a img:active {
+  transform: scale(1.07);
+}
+
+.contact-container h2 {
+  color: white;
+  font-family: cursive;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
 @media (min-width: 1200px) {
