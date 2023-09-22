@@ -42,6 +42,18 @@
     font-size: 1rem;
     padding: 0;
     margin: 0;
+    -webkit-animation: email 1s ease-in-out infinite alternate;
+    -moz-animation: email 1s ease-in-out infinite alternate;
+    animation: email 1s ease-in-out infinite alternate;
+}
+
+@keyframes email {
+    from {
+        text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px grey, 0 0 40px grey, 0 0 50px grey, 0 0 60px grey, 0 0 70px grey, 0 0 80px grey;
+    }
 }
 
 
