@@ -237,7 +237,7 @@ body {
   src: url(../fonts/digital-7.ttf);
 }
 .title {
-  color: #fff;
+  color: white;
   font-family: "Luckiest Guy", cursive;
   letter-spacing: 3px;
   text-align: center;
@@ -248,7 +248,7 @@ body {
 
 @keyframes title {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #209500, 0 0 40px #209500, 0 0 50px #209500, 0 0 60px #209500, 0 0 70px #209500;
+    text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px #209500, 0 0 40px #209500, 0 0 50px #209500, 0 0 60px #209500, 0 0 70px #209500;
   }
   to {
     text-shadow: 0 0 20px #fff, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00;
@@ -345,7 +345,8 @@ a {
   width: 100%;
   margin: 0;
   padding: 10px 0;
-  font: 300 30px "Luckiest Guy", cursive;
+  font-size: 30px;
+  font-family: "Luckiest Guy", cursive;
   text-transform: uppercase;
 }
 .link1:hover {
@@ -1293,10 +1294,6 @@ a {
   margin-top: 10px;
 }
 
-.projects .title {
-  font-size: 2.5rem;
-}
-
 .project-img {
   width: 100%;
 }
@@ -1345,7 +1342,7 @@ a {
   transition: all 0.3s ease-in-out;
   color: red;
 }
-.enter:hover + .iconDescription {
+.enter:hover + .iconDescription, .enter:active + .iconDescription, .enter:focus + .iconDescription {
   opacity: 1;
 }
 
