@@ -1341,7 +1341,7 @@ a {
   transition: all 0.3s ease-in-out;
   color: red;
 }
-.enter:hover + .iconDescription, .enter:active + .iconDescription {
+.enter:hover + .iconDescription {
   opacity: 1;
 }
 

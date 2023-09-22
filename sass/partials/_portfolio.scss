@@ -70,9 +70,7 @@
     font-size: 8rem;
     transition: all 0.3s ease-in-out;
     color: red;
-
-    &:hover + .iconDescription,
-    &:active + .iconDescription {
+    &:hover + .iconDescription {
         opacity: 1;
     }
 }
