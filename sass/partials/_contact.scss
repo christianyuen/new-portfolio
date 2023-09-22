@@ -25,7 +25,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-a img {
+.contact-container a img {
     filter: invert(1);
     width: 200px;
     transition: all ease-in-out 0.3s;
@@ -36,8 +36,8 @@ a img {
     }
 }
 
-.contact-container h2 {
-    color: white;
+.send-email {
+    color: red;
     font-family: cursive;
     font-size: 1rem;
     padding: 0;
