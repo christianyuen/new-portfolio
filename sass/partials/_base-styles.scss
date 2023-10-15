@@ -21,6 +21,16 @@ body {
     text-align: center;
     font-size: 2.5rem;
     text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.title-glow {
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
     -webkit-animation: title 1s ease-in-out infinite alternate;
     -moz-animation: title 1s ease-in-out infinite alternate;
     animation: title 1s ease-in-out infinite alternate;
