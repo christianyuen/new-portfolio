@@ -36,6 +36,14 @@
     }
 }
 
+.contact-text {
+    color: rgb(0, 255, 0);
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
 .send-email {
     color: rgb(0, 255, 0);
     font-family: 'Luckiest Guy', cursive;
@@ -49,7 +57,7 @@
 
 @keyframes email {
     from {
-        text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black;
+        text-shadow: 0 0 10px white, 0 0 20px rgb(255, 233, 233), 0 0 30px rgb(255, 155, 155), 0 0 40px rgb(255, 72, 72), 0 0 50px rgb(255, 94, 94), 0 0 60px rgb(255, 216, 216)rgb(249, 37, 37) 70px rgb(255, 255, 255);
     }
     to {
         text-shadow: 0 0 20px #fff, 0 0 30px grey, 0 0 40px grey, 0 0 50px grey, 0 0 60px grey, 0 0 70px grey, 0 0 80px grey;
